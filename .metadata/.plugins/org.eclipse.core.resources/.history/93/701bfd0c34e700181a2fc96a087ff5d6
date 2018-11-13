@@ -1,0 +1,9 @@
+package com.smart.aspectJ.fun;
+
+@Aspect
+public class TestAspect{
+	@AfterReturning("@annotation(com.smart.anno.NeedTest)")
+	public void needTestFun() {
+		System.out.println("needTestFun() executed!"); 
+	}
+}

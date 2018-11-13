@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="323" started-at="2018-10-30T02:21:04Z" finished-at="2018-10-30T02:21:04Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="323" started-at="2018-10-30T02:21:04Z" finished-at="2018-10-30T02:21:04Z">
+      <class name="com.smart.context.ApplicationContextTest">
+        <test-method status="PASS" signature="getBean()[pri:0, instance:com.smart.context.ApplicationContextTest@6108b2d7]" name="getBean" duration-ms="6" started-at="2018-10-30T10:21:04Z" finished-at="2018-10-30T10:21:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBean -->
+      </class> <!-- com.smart.context.ApplicationContextTest -->
+      <class name="com.smart.beanfactory.BeanFactoryTest">
+        <test-method status="PASS" signature="getBean()[pri:0, instance:com.smart.beanfactory.BeanFactoryTest@7a0ac6e3]" name="getBean" duration-ms="303" started-at="2018-10-30T10:21:04Z" finished-at="2018-10-30T10:21:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBean -->
+      </class> <!-- com.smart.beanfactory.BeanFactoryTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

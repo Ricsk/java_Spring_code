@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.smart.advisor.StaticAdvisorTest">
+        <methods>
+          <include name="StaticBeforeTest"/>
+        </methods>
+      </class> <!-- com.smart.advisor.StaticAdvisorTest -->
+      <class name="com.smart.advisor.DynamicAdvisorTest">
+        <methods>
+          <include name="dynamic"/>
+        </methods>
+      </class> <!-- com.smart.advisor.DynamicAdvisorTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

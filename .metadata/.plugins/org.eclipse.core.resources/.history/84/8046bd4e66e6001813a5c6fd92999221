@@ -1,0 +1,15 @@
+package com.smart.aop;
+
+import org.springframework.core.OrderComparator;
+
+public class SystemBootManager{
+	private Logger logger = LoggerFactory.getLogger(this.getClass());
+	private List<SystemBootAddon>systemBootAddons = Collections.EMPTY_LIST;
+	private boolean hasRunOnce = false;
+	@Autowired(required = false)
+	public void setSystemBootAddons(List<SystemBootAddon> systemBootAddons) {
+		Assert.notEmpyt(systemBootAddons);
+		OrderComparator.sort(systemBootAddons);
+		this.systemBootAddons = systemBootAddons;
+	}
+}

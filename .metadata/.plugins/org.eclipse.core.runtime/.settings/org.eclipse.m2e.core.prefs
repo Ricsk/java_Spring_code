@@ -1,0 +1,6 @@
+eclipse.m2.WorkspacelifecycleMappingsLocation=E\:/work_java/.metadata/.plugins/org.eclipse.m2e.core/lifecycle-mapping-metadata.xml
+eclipse.m2.defaultRuntime=EMBEDDED
+eclipse.m2.runtimes=apache-maven-3.3.9-bin
+eclipse.m2.runtimesNodes/apache-maven-3.3.9-bin/location=D\:\\masterSpring\\apache-maven-3.3.9-bin
+eclipse.m2.runtimesNodes/apache-maven-3.3.9-bin/type=EXTERNAL
+eclipse.preferences.version=1

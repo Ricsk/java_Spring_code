@@ -1,0 +1,10 @@
+package com.smart.aspectJ.basic;
+
+import org.testng.annotations.Test;
+
+public class DeclaredParentsTest{
+	@Test
+	public void declareParent{
+		String con
+	}
+}

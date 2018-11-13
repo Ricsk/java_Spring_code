@@ -1,0 +1,8 @@
+package com.smart.aspectJ.basic;
+
+@Aspect
+public class EnableSellerAspect{
+	@DelcareParents(value="com.smart.aspectJ.example.NaiveWaiter",
+			defaultImpl=SmartSeller.class)
+	Seller seller;
+}

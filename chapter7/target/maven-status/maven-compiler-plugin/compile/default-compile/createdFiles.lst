@@ -1,0 +1,7 @@
+com\smart\proxy\MethodPerformance.class
+com\smart\proxy\ForumServiceImpl.class
+com\smart\proxy\TestForumService.class
+com\smart\proxy\PerformanceMonitor.class
+com\smart\proxy\ForumService.class
+com\smart\proxy\CglibProxy.class
+com\smart\proxy\PerformanceHandler.class

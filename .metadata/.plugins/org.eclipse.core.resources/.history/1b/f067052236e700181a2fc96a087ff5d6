@@ -1,0 +1,17 @@
+package com.smart.aspectJ.fun;
+import com.smart.aspectJ.fun.*;
+import org.springframework.context.ApplicationContext;
+
+import com.smart.aspectJ.example.Waiter;
+
+public class PointcunFunTest{
+	@Test
+	public void pointcut(){
+		String configPath = "com/smart/aspectJ/fun/beans.xml";
+		ApplicationContext ctx = new ClassPathXmlApplicationContext(configPath);
+		Waiter naiveWaiter = (Waiter) ctx.getBean("naiveWaiter");
+		Waiter naughtyWaiter = (Waiter) ctx.getBean("naughtyWaiter");
+		naiveWaiter.greetTo("John");
+		naughtWaiter.greetTo("Tom");
+	}
+}

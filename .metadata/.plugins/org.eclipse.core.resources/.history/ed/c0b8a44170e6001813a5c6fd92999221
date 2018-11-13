@@ -1,0 +1,13 @@
+
+package com.smart.aop;
+
+import org.springframework.core.Ordered;
+
+
+public interface SystemBootAddon extends Ordered {
+
+    /**
+     * 鍦ㄧ郴缁熷氨缁悗璋冪敤鐨勬柟娉�
+     */
+    void onReady();
+}

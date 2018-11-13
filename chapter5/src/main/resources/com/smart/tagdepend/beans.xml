@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+         http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+  
+<bean id="car1" class="com.smart.tagdepend.Car"
+	p:brand="HongQi" p:price="2000" p:color="black"/>
+<bean id="car2" class="com.smrt.tagdepend.Car"
+	p:brand="HongQi" p:price="2000" p:color="red"/>
+	
+<bean id="abstractCar" class="com.smart.tagdepend.Car"
+	p:brand="HongQi" p:price="2000" p:color="black" abstract="true"/>
+<bean id="car3" p:color="red" parent="abstractCar"/>
+<bean id="car4" p:color="green" parent="abstractCar"/>
+
+<bean id="car" class="com.smart.tagdepend.Car"/>
+<bean id="boss" class="com.smart.tagdepend.Boss">
+	<property name="carId">
+		<idref bean="car"/>
+	</property>
+</bean>
+</beans>

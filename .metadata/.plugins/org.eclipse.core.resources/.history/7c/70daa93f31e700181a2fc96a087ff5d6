@@ -1,0 +1,10 @@
+package com.smart.aspectJ.basic;
+
+import org.aspectj.lang.annotation.Aspect;
+
+@Aspect
+public class EnableSellerAspect{
+	@DeclareParents(value="com.smart.aspectJ.example.NaiveWaiter",
+			defaultImpl=SmartSeller.class)
+	Seller seller;
+}

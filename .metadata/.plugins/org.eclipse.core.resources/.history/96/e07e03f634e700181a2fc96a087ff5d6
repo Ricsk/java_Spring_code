@@ -1,0 +1,6 @@
+package com.smart.aspectJ.fun;
+import com.smart.aspectJ.anno.*;
+@NeedTest
+public class NaughtyWaiter{
+	
+}
