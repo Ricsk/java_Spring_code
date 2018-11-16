@@ -63,9 +63,11 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="E:\work_java\4.2.1"/>
+			<item value="E:\work_java\chapter8"/>
+			<item value="E:\work_java"/>
 			<item value="E:\work_java\chapter6_1"/>
 			<item value="E:\work_java\4.2.1\src"/>
-			<item value="E:\work_java"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -78,30 +80,15 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.smart.chapter8"/>
-			<item value="com.smart.chapter7"/>
-			<item value="com.smart.chapter6_2"/>
-			<item value="com.smart.chapter5"/>
-			<item value="com.smart.chapter4"/>
-			<item value="com.smart.chapter3_"/>
-			<item value="com.smart.chapter3_1"/>
-			<item value="com.smart.chapter2"/>
-			<item value="com.start.hello2"/>
+			<item value="com.smart.chapter10"/>
+			<item value="com.smart.chapter9"/>
 		</list>
 		<list key="groupId">
 			<item value="com.smart"/>
-			<item value="com.start"/>
 		</list>
 		<list key="artifactId">
-			<item value="chapter8"/>
-			<item value="chapter7"/>
-			<item value="chapter6_2"/>
-			<item value="chapter5"/>
-			<item value="chapter4"/>
-			<item value="chapter3_s"/>
-			<item value="chapter3_1"/>
-			<item value="chapter2"/>
-			<item value="hello2"/>
+			<item value="chapter10"/>
+			<item value="chapter9"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

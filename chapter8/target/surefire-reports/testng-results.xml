@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="508" started-at="2018-11-13T12:30:13Z" finished-at="2018-11-13T12:30:14Z">
+  <suite name="Command line suite" duration-ms="742" started-at="2018-11-16T05:15:35Z" finished-at="2018-11-16T05:15:36Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="508" started-at="2018-11-13T12:30:13Z" finished-at="2018-11-13T12:30:14Z">
-      <class name="com.smart.aspectJ.fun.PointcunFunTest">
-        <test-method status="PASS" signature="pointcut()[pri:0, instance:com.smart.aspectJ.fun.PointcunFunTest@22f71333]" name="pointcut" duration-ms="494" started-at="2018-11-13T20:30:13Z" finished-at="2018-11-13T20:30:14Z">
+    <test name="Command line test" duration-ms="742" started-at="2018-11-16T05:15:35Z" finished-at="2018-11-16T05:15:36Z">
+      <class name="com.smart.schema.schemaTest">
+        <test-method status="PASS" signature="schematest()[pri:0, instance:com.smart.schema.schemaTest@6aaa5eb0]" name="schematest" duration-ms="728" started-at="2018-11-16T13:15:35Z" finished-at="2018-11-16T13:15:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- pointcut -->
-      </class> <!-- com.smart.aspectJ.fun.PointcunFunTest -->
+        </test-method> <!-- schematest -->
+      </class> <!-- com.smart.schema.schemaTest -->
     </test> <!-- Command line test -->
   </suite> <!-- Command line suite -->
 </testng-results>

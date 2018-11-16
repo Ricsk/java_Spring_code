@@ -8,7 +8,7 @@ import com.smart.aspectJ.basic.*;
 import com.smart.aspectJ.example.Waiter;
 
 public class PointcunFunTest{
-	@Test
+	//@Test
 	public void pointcut(){
 		String configPath = "com/smart/aspectJ/fun/beans.xml";
 		ApplicationContext ctx = new ClassPathXmlApplicationContext(configPath);

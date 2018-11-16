@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:p="http://www.springframework.org/schema/p"
+xmlns:context="http://www.springframework.org/schema/context"
+xmlns:aop="http://www.springframework.org/schema/aop"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-4.0.xsd
+	http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
+
+<!-- 	<aop:config proxy-target-class="true">
+		<aop:aspect ref="adviceMethods">
+			<aop:before pointcut="target(com.smart.aspectJ.example.NaiveWaiter) and execution(* greetTo(..))"
+				method="preGreeting"/>
+		</aop:aspect>
+	</aop:config> -->
+<!-- 	<aop:config proxy-target-class="true">
+		<aop:aspect ref="adviceMethods">
+			<aop:pointcut id="greetToPointcut"
+				expression="target(com.smart.aspect.example.NaiveWaiter)
+					and execution(* greetTo(..))"/>
+			<aop:before method="preGreeting" pointcut-ref="greetToPointcut"/>
+		</aop:aspect>
+	</aop:config> -->
+<!-- 	<aop:config proxy-target-class="true">
+		<aop:pointcut id="greetToPointcut"
+			expression="target(com.smart.aspectJ.example.NaiveWaiter)
+				and execution(* greetTo(..))"/>
+		<aop:aspect ref="adviceMethods">
+			<aop:before method="preGreeting" pointcut-ref="greetToPointcut"/>
+		</aop:aspect>
+		<aop:aspect ref="adviceMethods">
+			<aop:after method="postGreeting" pointcut-ref="greetToPointcut"/>
+		</aop:aspect>
+	</aop:config> -->
+<!-- 	<aop:config proxy-target-class="true">
+		<aop:aspect ref="adviceMethods">
+			<aop:after-returning method="afterReturning"
+				pointcut="target(com.smart.aspectJ.basic.SmartSeller)"
+				returning="retVal"/>
+		</aop:aspect>
+	</aop:config> -->
+<!-- 	<aop:config proxy-target-class="true">
+		<aop:aspect ref="adviceMethods">
+			<aop:around method="aroundMethod"
+				pointcut="execution(* serveTo(..)) and within(com.smart.aspectJ.example.Waiter)"/>
+		</aop:aspect>
+	</aop:config> -->
+<!-- 	<aop:config proxy-target-class="true">
+		<aop:aspect ref="adviceMethods">
+			<aop:after-throwing method="afterThrowingMethod"
+				pointcut="target(com.smart.aspectJ.basic.SmartSeller) and execution(* checkBill(..))"
+				throwing="iae"/>
+		</aop:aspect>
+	</aop:config> -->
+<!-- 	<aop:config proxy-target-class="true">
+		<aop:aspect ref="adviceMethods">
+			<aop:after method="finalMethod"
+				pointcut="execution(* com..*.Waiter.greetTo(..))"/>
+		</aop:aspect>
+	</aop:config> -->
+<!-- 	<aop:config proxy-target-class="true">
+		<aop:aspect ref="adviceMethods">
+			<aop:declare-parents
+				implement-interface="com.smart.aspectJ.basic.Seller"
+				default-impl="com.smart.aspectJ.basic.SmartSeller"
+				types-matching="com.smart.aspectJ.example.Waiter+"/>
+		</aop:aspect>
+	</aop:config> -->
+<!-- 	<aop:config proxy-target-class="true">
+		<aop:aspect ref="adviceMethods">
+			<aop:before method="bindParams"
+				pointcut="target(com.smart.aspectJ.example.NaiveWaiter) and args(name, num, ..)"/>
+		</aop:aspect>
+	</aop:config> -->
+	<aop:config proxy-target-class="true">
+		<aop:advisor advice-ref="testAdvice"
+			pointcut="execution(* com..*.Waiter.greetTo(..))"/>
+	</aop:config>
+	<bean id="testAdvice"
+		class="com.smart.schema.TestBeforeAdvice"/>
+	<bean id="adviceMethods" class="com.smart.schema.AdviceMethods"/>
+	<bean id="naiveWaiter" class="com.smart.aspectJ.example.NaiveWaiter"/>
+	<bean id="naughtyWaiter" class="com.smart.aspectJ.fun.NaughtyWaiter"/>
+	<bean id="seller" class="com.smart.aspectJ.basic.SmartSeller"/>
+</beans>

@@ -101,7 +101,7 @@
                     <div class="method-list-content passed suite-Command_line_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.smart.aspectJ.fun.PointcunFunTest" hash-for-method="pointcut">pointcut</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.smart.schema.schemaTest" hash-for-method="schematest">schematest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Command_line_suite -->
@@ -119,14 +119,14 @@
           <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.smart.aspectJ.fun.PointcunFunTest</span>
+              <span class="class-name">com.smart.schema.schemaTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="pointcut">
-                  </a> <!-- pointcut -->
-                  <span class="method-name">pointcut</span>
+                  <a name="schematest">
+                  </a> <!-- schematest -->
+                  <span class="method-name">schematest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -142,10 +142,12 @@
 &lt;suite verbose=&quot;0&quot; name=&quot;Command line suite&quot;&gt;
   &lt;test name=&quot;Command line test&quot; preserve-order=&quot;false&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.smart.aspectJ.advanced.basicTest&quot;/&gt;
       &lt;class name=&quot;com.smart.aspectJ.anno.ToolTest&quot;/&gt;
       &lt;class name=&quot;com.smart.aspectJ.basic.DeclaredParentsTest&quot;/&gt;
       &lt;class name=&quot;com.smart.aspectJ.example.AspectJProxyTest&quot;/&gt;
       &lt;class name=&quot;com.smart.aspectJ.fun.PointcunFunTest&quot;/&gt;
+      &lt;class name=&quot;com.smart.schema.schemaTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Command line test --&gt;
 &lt;/suite&gt; &lt;!-- Command line suite --&gt;
@@ -159,7 +161,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Command line test (4 classes)</span>
+                <span class="test-name">Command line test (6 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -187,14 +189,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'pointcut')
-data.setCell(0, 2, 'com.smart.aspectJ.fun.PointcunFunTest')
-data.setCell(0, 3, 494);
+data.setCell(0, 1, 'schematest')
+data.setCell(0, 2, 'com.smart.schema.schemaTest')
+data.setCell(0, 3, 728);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 494 ms</span>
+              <span class="suite-total-time">Total running time: 728 ms</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -220,9 +222,9 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.smart.aspectJ.fun.PointcunFunTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.smart.schema.schemaTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">pointcut</span>
+                <span class="method-name">schematest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
