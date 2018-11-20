@@ -1,4 +1,0 @@
-package com.smart.aspectJ.example;
-public class NaiveWaiter implements Waiter{
-	
-}

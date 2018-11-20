@@ -1,6 +1,0 @@
-package com.smart.aspectJ.example;
-
-public class AspectJProxyTest{
-	Waiter target = new NaiveWaiter();
-	
-}

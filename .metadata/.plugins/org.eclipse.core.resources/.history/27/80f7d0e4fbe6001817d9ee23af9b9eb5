@@ -1,8 +1,0 @@
-package com.smart.aspectJ.example;
-
-@AspectJ
-public class PreGreetingAspect{
-	
-	@Before("execution(*greetTo(..))")
-	
-}

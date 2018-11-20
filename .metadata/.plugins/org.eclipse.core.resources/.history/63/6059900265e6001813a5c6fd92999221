@@ -1,4 +1,0 @@
-package com.smart.aop;
-public interface SystemBootAddon extends Ordered{
-	void onReady();
-}

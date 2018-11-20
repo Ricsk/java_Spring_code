@@ -1,4 +1,0 @@
-package com.smart.aspectJ.example;
-public interface Waiter{
-	void greetTo();
-}
