@@ -7,6 +7,7 @@ import java.sql.Types;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.CallableStatementCallback;
 import org.springframework.jdbc.core.CallableStatementCreator;
@@ -15,9 +16,12 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.SqlOutParameter;
 import org.springframework.jdbc.core.SqlParameter;
-
+import org.springframework.jdbc.support.rowset.SqlRowSet;
+import org.springframework.stereotype.Repository;
+@Repository
 public class TopicDao{
 	private JdbcTemplate jdbcTemplate;
+	@Autowired
 	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
 		this.jdbcTemplate = jdbcTemplate;
 	}
@@ -66,4 +70,9 @@ public class TopicDao{
 		});
 		return num;
 	}
+	public SqlRowSet getTopicRowSet(int userId) {
+		String sql = "SELECT topic_id,topic_title FROM t_topic WHERE user_id=?";
+		return jdbcTemplate.queryForRowSet(sql,userId);
+
+	};
 }

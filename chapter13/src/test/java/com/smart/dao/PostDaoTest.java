@@ -17,7 +17,7 @@ import com.smart.domain.Post;
 public class PostDaoTest extends AbstractTransactionalTestNGSpringContextTests{
 	@Autowired
 	private PostDao postDao;
-	@Test
+	//@Test
 	public void testAddPost() throws Throwable{
 		Post post = new Post();
 		post.setUserId(2);

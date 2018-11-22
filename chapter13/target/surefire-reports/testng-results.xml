@@ -2,50 +2,50 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="com.smart.dao.PostDaoTest" duration-ms="762" started-at="2018-11-20T05:03:20Z" finished-at="2018-11-20T05:03:21Z">
+  <suite name="Command line suite" duration-ms="918" started-at="2018-11-22T03:59:54Z" finished-at="2018-11-22T03:59:55Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="762" started-at="2018-11-20T05:03:20Z" finished-at="2018-11-20T05:03:21Z">
-      <class name="com.smart.dao.PostDaoTest">
-        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:com.smart.dao.PostDaoTest@694e1548]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="7" started-at="2018-11-20T13:03:20Z" finished-at="2018-11-20T13:03:20Z">
+    <test name="Command line test" duration-ms="918" started-at="2018-11-22T03:59:54Z" finished-at="2018-11-22T03:59:55Z">
+      <class name="com.smart.dao.TopicDaoTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:com.smart.dao.TopicDaoTest@2d6eabae]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="7" started-at="2018-11-22T11:59:54Z" finished-at="2018-11-22T11:59:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestClass -->
-        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.smart.dao.PostDaoTest@694e1548]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="458" started-at="2018-11-20T13:03:20Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2018-11-20T13:03:21Z">
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.smart.dao.TopicDaoTest@2d6eabae]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="536" started-at="2018-11-22T11:59:54Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2018-11-22T11:59:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextPrepareTestInstance -->
-        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.smart.dao.PostDaoTest@694e1548]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="261" started-at="2018-11-20T13:03:21Z" finished-at="2018-11-20T13:03:21Z">
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.smart.dao.TopicDaoTest@2d6eabae]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="256" started-at="2018-11-22T11:59:55Z" finished-at="2018-11-22T11:59:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.smart.dao.PostDaoTest.testAddPost() throws java.lang.Throwable]]>
+                <![CDATA[public void com.smart.dao.TopicDaoTest.testGetTopicRowSet()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method status="PASS" signature="testAddPost()[pri:0, instance:com.smart.dao.PostDaoTest@694e1548]" name="testAddPost" duration-ms="20" started-at="2018-11-20T13:03:21Z" finished-at="2018-11-20T13:03:21Z">
+        <test-method status="PASS" signature="testGetTopicRowSet()[pri:0, instance:com.smart.dao.TopicDaoTest@2d6eabae]" name="testGetTopicRowSet" duration-ms="108" started-at="2018-11-22T11:59:55Z" finished-at="2018-11-22T11:59:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAddPost -->
-        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.smart.dao.PostDaoTest@694e1548]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="7" started-at="2018-11-20T13:03:21Z" finished-at="2018-11-20T13:03:21Z">
+        </test-method> <!-- testGetTopicRowSet -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.smart.dao.TopicDaoTest@2d6eabae]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="4" started-at="2018-11-22T11:59:55Z" finished-at="2018-11-22T11:59:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.smart.dao.PostDaoTest.testAddPost() throws java.lang.Throwable]]>
+                <![CDATA[public void com.smart.dao.TopicDaoTest.testGetTopicRowSet()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.smart.dao.PostDaoTest@694e1548]" name="springTestContextAfterTestClass" is-config="true" duration-ms="1" started-at="2018-11-20T13:03:21Z" finished-at="2018-11-20T13:03:21Z">
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.smart.dao.TopicDaoTest@2d6eabae]" name="springTestContextAfterTestClass" is-config="true" duration-ms="1" started-at="2018-11-22T11:59:55Z" finished-at="2018-11-22T11:59:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestClass -->
-      </class> <!-- com.smart.dao.PostDaoTest -->
+      </class> <!-- com.smart.dao.TopicDaoTest -->
     </test> <!-- Command line test -->
-  </suite> <!-- com.smart.dao.PostDaoTest -->
+  </suite> <!-- Command line suite -->
 </testng-results>

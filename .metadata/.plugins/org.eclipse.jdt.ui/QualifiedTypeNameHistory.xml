@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.smart.aspectJ.advanced.Monitorable"/>
-<fullyQualifiedTypeName name="org.aspectj.lang.annotation.AfterThrowing"/>
-<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
-<fullyQualifiedTypeName name="com.smart.aspectJ.example.Waiter"/>
-<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
-<fullyQualifiedTypeName name="com.smart.aspectJ.basic.Seller"/>
 <fullyQualifiedTypeName name="org.aspectj.lang.ProceedingJoinPoint"/>
 <fullyQualifiedTypeName name="com.smart.aspectJ.basic.SmartSeller"/>
 <fullyQualifiedTypeName name="com.smart.aspectJ.example.NaiveWaiter"/>
@@ -27,13 +21,10 @@
 <fullyQualifiedTypeName name="java.sql.Statement"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.support.KeyHolder"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.support.GeneratedKeyHolder"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.core.BatchPreparedStatementSetter"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.core.RowCallbackHandler"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="javax.swing.tree.RowMapper"/>
-<fullyQualifiedTypeName name="java.sql.ResultSet"/>
-<fullyQualifiedTypeName name="org.springframework.jdbc.core.RowMapper"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.core.CallableStatementCallback"/>
 <fullyQualifiedTypeName name="java.sql.CallableStatement"/>
 <fullyQualifiedTypeName name="org.springframework.dao.DataAccessException"/>
@@ -51,7 +42,6 @@
 <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.core.support.AbstractLobCreatingPreparedStatementCallback"/>
-<fullyQualifiedTypeName name="org.springframework.util.FileCopyUtils"/>
 <fullyQualifiedTypeName name="com.smart.domain.Post"/>
 <fullyQualifiedTypeName name="org.springframework.test.context.ContextConfiguration"/>
 <fullyQualifiedTypeName name="org.springframework.test.annotation.Rollback"/>
@@ -60,4 +50,14 @@
 <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
 <fullyQualifiedTypeName name="org.springframework.core.io.ClassPathResource"/>
 <fullyQualifiedTypeName name="org.springframework.test.context.testng.AbstractTransactionalTestNGSpringContextTests"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.RowMapper"/>
+<fullyQualifiedTypeName name="org.springframework.util.FileCopyUtils"/>
+<fullyQualifiedTypeName name="java.io.OutputStream"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.support.AbstractLobStreamingResultSetExtractor"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.LobRetrievalFailureException"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.support.incrementer.DataFieldMaxValueIncrementer"/>
 </qualifiedTypeNameHistroy>

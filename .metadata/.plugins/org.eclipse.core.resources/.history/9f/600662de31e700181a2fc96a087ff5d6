@@ -1,8 +1,0 @@
-package com.smart.aspectJ.basic;
-
-public class DeclaredParentsTest{
-	@Test
-	public void declareParent{
-		String con
-	}
-}

@@ -1,5 +1,0 @@
-package com.smart.aspectJ.basic;
-
-public interface Seller{
-	
-}

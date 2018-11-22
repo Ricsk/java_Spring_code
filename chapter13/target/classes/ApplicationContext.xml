@@ -23,9 +23,15 @@
 <bean id="lobHandler" 
 	class="org.springframework.jdbc.support.lob.DefaultLobHandler"
 		lazy-init="true"/>
-
-	<bean id="transactionManager"
+<bean id="incre"
+	class="org.springframework.jdbc.support.incrementer.MySQLMaxValueIncrementer"
+	p:incrementerName="t_post_id"
+	p:columnName="sequence_id"
+	p:cacheSize="10"
+	p:dataSource-ref="dataSource"/>
+	
+<bean id="transactionManager"
 		class="org.springframework.jdbc.datasource.DataSourceTransactionManager"
 		p:dataSource-ref="dataSource"/>
-
+<tx:annotation-driven/>
 </beans>
