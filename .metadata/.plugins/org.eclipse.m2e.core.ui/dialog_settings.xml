@@ -63,9 +63,10 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="E:\work_java"/>
+			<item value="E:\work_java\chapter13"/>
 			<item value="E:\work_java\4.2.1"/>
 			<item value="E:\work_java\chapter8"/>
-			<item value="E:\work_java"/>
 			<item value="E:\work_java\chapter6_1"/>
 			<item value="E:\work_java\4.2.1\src"/>
 		</list>
@@ -80,19 +81,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.smart.chapter13"/>
-			<item value="com.smart.chapter11"/>
-			<item value="com.smart.chapter10"/>
-			<item value="com.smart.chapter9"/>
+			<item value="com.smart.chapter17"/>
 		</list>
 		<list key="groupId">
 			<item value="com.smart"/>
 		</list>
 		<list key="artifactId">
-			<item value="chapter13"/>
-			<item value="chapter11"/>
-			<item value="chapter10"/>
-			<item value="chapter9"/>
+			<item value="chapter17"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

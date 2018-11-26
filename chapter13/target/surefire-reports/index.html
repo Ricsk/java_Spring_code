@@ -101,7 +101,7 @@
                     <div class="method-list-content passed suite-Command_line_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.smart.dao.TopicDaoTest" hash-for-method="testGetTopicRowSet">testGetTopicRowSet</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.smart.dao.ForumDaoTest" hash-for-method="testAddForum">testAddForum</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Command_line_suite -->
@@ -119,14 +119,14 @@
           <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.smart.dao.TopicDaoTest</span>
+              <span class="class-name">com.smart.dao.ForumDaoTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testGetTopicRowSet">
-                  </a> <!-- testGetTopicRowSet -->
-                  <span class="method-name">testGetTopicRowSet</span>
+                  <a name="testAddForum">
+                  </a> <!-- testAddForum -->
+                  <span class="method-name">testAddForum</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -142,6 +142,7 @@
 &lt;suite verbose=&quot;0&quot; name=&quot;Command line suite&quot;&gt;
   &lt;test name=&quot;Command line test&quot; preserve-order=&quot;false&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.smart.dao.ForumDaoTest&quot;/&gt;
       &lt;class name=&quot;com.smart.dao.PostDaoTest&quot;/&gt;
       &lt;class name=&quot;com.smart.dao.TopicDaoTest&quot;/&gt;
     &lt;/classes&gt;
@@ -157,7 +158,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Command line test (2 classes)</span>
+                <span class="test-name">Command line test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -185,14 +186,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testGetTopicRowSet')
-data.setCell(0, 2, 'com.smart.dao.TopicDaoTest')
-data.setCell(0, 3, 108);
+data.setCell(0, 1, 'testAddForum')
+data.setCell(0, 2, 'com.smart.dao.ForumDaoTest')
+data.setCell(0, 3, 29);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 108 ms</span>
+              <span class="suite-total-time">Total running time: 29 ms</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -218,30 +219,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.smart.dao.TopicDaoTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.smart.dao.ForumDaoTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">springTestContextBeforeTestClass</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">springTestContextPrepareTestInstance</span>
-                <span class="method-start">7 ms</span>
+                <span class="method-start">8 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">springTestContextBeforeTestMethod(public void com.smart.dao.TopicDaoTest.testGetTopicRowSet())</span>
-                <span class="method-start">544 ms</span>
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.smart.dao.ForumDaoTest.testAddForum() throws java.lang.Throwable)</span>
+                <span class="method-start">561 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testGetTopicRowSet</span>
-                <span class="method-start">800 ms</span>
+                <span class="method-name">testAddForum</span>
+                <span class="method-start">811 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">springTestContextAfterTestMethod(public void com.smart.dao.TopicDaoTest.testGetTopicRowSet())</span>
-                <span class="method-start">908 ms</span>
+                <span class="method-name">springTestContextAfterTestMethod(public void com.smart.dao.ForumDaoTest.testAddForum() throws java.lang.Throwable)</span>
+                <span class="method-start">840 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">springTestContextAfterTestClass</span>
-                <span class="method-start">912 ms</span>
+                <span class="method-start">846 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

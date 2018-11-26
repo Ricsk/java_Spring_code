@@ -16,6 +16,9 @@ import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.core.PreparedStatementSetter;
 import org.springframework.jdbc.core.RowCallbackHandler;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
@@ -27,11 +30,22 @@ public class ForumDao{
 	private JdbcTemplate jdbcTemplate;
 	private final String sql1 = "create table t_user(user_id int primary key , user_name varchar(60))";
 	private final String sql2 = "insert int t_forum(forum_name, forum_desc) VALUES(?,?)";
+	private final String sql3 = "insert into t_forum(forum_name, forum_desc)"
+			+"values(:forumName, :forumDesc)";
+	private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 	@Autowired
 	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
 		this.jdbcTemplate = jdbcTemplate;
 	}
+	@Autowired
+	public void setNamedParameterJdbcTemplate(NamedParameterJdbcTemplate namedParameterJdbcTemplate) {
+		this.namedParameterJdbcTemplate = namedParameterJdbcTemplate;
+	}
 	
+	public void addForumByNamedParams(final Forum forum) {
+		SqlParameterSource sps = new BeanPropertySqlParameterSource(forum);
+		namedParameterJdbcTemplate.update(sql3, sps);
+	}
 	public void addForum(Forum forum) {
 		Object [] params = new Object[] {forum.getForumName(), forum.getForumDesc()};
 		jdbcTemplate.update(sql2, params, new int[] {Types.VARCHAR, Types.VARCHAR});

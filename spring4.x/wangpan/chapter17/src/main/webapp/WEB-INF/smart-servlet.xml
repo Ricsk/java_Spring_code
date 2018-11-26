@@ -38,8 +38,7 @@
         </property>
     </bean>
 
-    <bean
-            class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"
             p:messageConverters-ref="messageConverters">
         <property name="webBindingInitializer">
             <bean class="com.smart.web.MyBindingInitializer"/>

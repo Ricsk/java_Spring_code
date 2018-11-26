@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 public class TopicDaoTest extends AbstractTransactionalTestNGSpringContextTests{
 	@Autowired
 	private TopicDao topicDao;
-	@Test
+	//@Test
 	public void testGetTopicRowSet() {
 		SqlRowSet srs = topicDao.getTopicRowSet(1);
 		

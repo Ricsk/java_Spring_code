@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="TestSuite" time="0.111" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="TestSuite" time="0.03" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="D:\JDK1.8\jre\bin"/>
@@ -27,7 +27,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="E:\work_java\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7071120806276845222.tmp"/>
+    <property name="classworlds.conf" value="E:\work_java\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7124822100850257647.tmp"/>
     <property name="sun.jnu.encoding" value="GBK"/>
     <property name="java.library.path" value="D:\JDK1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_144/bin/server;C:/Program Files/Java/jre1.8.0_144/bin;C:/Program Files/Java/jre1.8.0_144/lib/amd64;;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Common Files\Thunder Network\KanKan\Codecs;D:\putty\;D:\miktex\miktex\bin\x64\;D:\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\MySQL\MySQL Server 5.7\bin\;D:\jee-photon\eclipse;D:\masterSpring\apache-maven-3.3.9-bin\bin;D:\JDK1.8\bin;D:\vc\Tools\WinNT;D:\vc\MSDev98\Bin;D:\vc\Tools;D:\VC98\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;F:\AppServ\Apache24\bin;F:\AppServ\php5;F:\AppServ\MySQL\bin;C:\Users\DEll\AppData\Local\Microsoft\WindowsApps;D:\JDK1.8\bin;C:\Users\DEll\AppData\Local\GitHubDesktop\bin;D:\Microsoft VS Code\bin;C:\Users\DEll\AppData\Local\Microsoft\WindowsApps;D:\Docker Toolbox;C:\Program Files\MySQL\MySQL Server 5.7\bin\;D:\jee-photon\eclipse;D:\masterSpring\apache-maven-3.3.9-bin\bin;;C:\WINDOWS\system32;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -61,5 +61,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.smart.dao.TopicDaoTest" name="testGetTopicRowSet" time="0.111"/>
+  <testcase classname="com.smart.dao.ForumDaoTest" name="testAddForum" time="0.03"/>
 </testsuite>

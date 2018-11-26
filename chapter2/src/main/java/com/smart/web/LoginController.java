@@ -13,7 +13,7 @@ import com.smart.service.UserService;
 @Controller
 public class LoginController{
 	private UserService userService;
-	@RequestMapping(value = "/","/index.html")
+	@RequestMapping(value = {"/","/index.html"})
 	public String loginPage() {
 		return "login";
 	}
