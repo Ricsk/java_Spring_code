@@ -10,7 +10,10 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.util.FileCopyUtils;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -18,12 +21,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.smart.domain.User;
+import com.smart.domain.UserEditor;
 import com.smart.service.UserService;
 @Controller
 @RequestMapping("/user")
+@SessionAttributes("user")
 public class UserController{
 	@RequestMapping("/register")
 	public String register() {
@@ -102,5 +109,57 @@ public class UserController{
 		User user = requestEntity.getBody();
 		user.setUserId("1000");
 		return new ResponseEntity<User>(user,HttpStatus.OK);
+	}
+	
+	@RequestMapping(path = "/handle61")
+	public String handle61(@ModelAttribute("user") User user) {
+		user.setUserId("1000");
+		return "/user/createSuccess";
+	}
+	@ModelAttribute("user")
+	public User getUser() {
+		User user = new User();
+		user.setUserId("1001");
+		user.setUserName("sss");
+		return user;
+	}
+	@RequestMapping(path = "/handle62")
+	public String handle62(@ModelAttribute("user") User user) {
+		user.setUserName("tom");
+		return "/user/showDetail";
+	}
+	
+	@RequestMapping(path = "/handle63")
+	//public String handle63(ModelMap modelMap, @RequestParam("userName") String name) {
+	public String handle63(ModelMap modelMap) {
+		modelMap.addAttribute("testAttr", "value1");
+		User user = (User)modelMap.get("user");
+		//user.setUserName(name);
+		return "/user/showDetail";
+	}
+	
+	@RequestMapping(path = "/handle71")
+	public String handle71(@ModelAttribute("user") User user) {
+		user.setUserName("John");
+		return "redirect:/user/handle72.html";
+	}
+	@RequestMapping(path = "/handle72")
+	public String handle72(ModelMap modelMap, SessionStatus sessionStatus) {
+		User user = (User)modelMap.get("user");
+		if(user != null) {
+			user.setUserName("Jetty");
+			//sessionStatus.setComplete();
+		}
+		return "/user/showDetail";
+	}
+	
+	@RequestMapping(path = "/handle81")
+	public String handle81(@RequestParam("user") User user, ModelMap modelMap) {
+		modelMap.put("user", user);
+		return "/user/showDetail";
+	}
+	@InitBinder
+	public void initBinder(WebDataBinder binder) {
+		binder.registerCustomEditor(User.class, new UserEditor());
 	}
 }

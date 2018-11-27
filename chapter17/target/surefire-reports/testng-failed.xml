@@ -5,7 +5,7 @@
     <classes>
       <class name="com.smart.web.UserControllerTest">
         <methods>
-          <include name="testHandle42"/>
+          <include name="testHandle51"/>
         </methods>
       </class> <!-- com.smart.web.UserControllerTest -->
     </classes>

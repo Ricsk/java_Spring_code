@@ -1,8 +1,17 @@
 package com.smart.domain;
+
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
+
+@XStreamAlias("message")
 public class User{
+	@XStreamAsAttribute
 	private String userName;
+	@XStreamAsAttribute
 	private String password;
+	@XStreamAsAttribute
 	private String realName;
+	@XStreamAsAttribute
 	private String userId;
 	public String getUserId() {
 		return userId;

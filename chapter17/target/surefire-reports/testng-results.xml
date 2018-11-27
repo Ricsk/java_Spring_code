@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="419" started-at="2018-11-26T05:54:59Z" finished-at="2018-11-26T05:54:59Z">
+  <suite name="Surefire suite" duration-ms="585" started-at="2018-11-26T12:29:23Z" finished-at="2018-11-26T12:29:24Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="419" started-at="2018-11-26T05:54:59Z" finished-at="2018-11-26T05:54:59Z">
+    <test name="Surefire test" duration-ms="585" started-at="2018-11-26T12:29:23Z" finished-at="2018-11-26T12:29:24Z">
       <class name="com.smart.web.UserControllerTest">
-        <test-method status="PASS" signature="testHandle41()[pri:0, instance:com.smart.web.UserControllerTest@7d417077]" name="testHandle41" duration-ms="405" started-at="2018-11-26T13:54:59Z" finished-at="2018-11-26T13:54:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testHandle41 -->
-        <test-method status="FAIL" signature="testHandle42()[pri:0, instance:com.smart.web.UserControllerTest@7d417077]" name="testHandle42" duration-ms="302" started-at="2018-11-26T13:54:59Z" finished-at="2018-11-26T13:54:59Z">
+        <test-method status="FAIL" signature="testHandle51()[pri:0, instance:com.smart.web.UserControllerTest@5b464ce8]" name="testHandle51" duration-ms="560" started-at="2018-11-26T20:29:23Z" finished-at="2018-11-26T20:29:24Z">
           <exception class="org.springframework.web.client.HttpServerErrorException">
             <message>
-              <![CDATA[500 Unknown return value type [[B]]]>
+              <![CDATA[500  : ParseError at [row,col]:[1,74] Message: 2 W?? UTF-8 ??W? 2 ¨¤H]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.springframework.web.client.HttpServerErrorException: 500 Unknown return value type [[B]
+              <![CDATA[org.springframework.web.client.HttpServerErrorException: 500  : ParseError at [row,col]:[1,74] Message: 2 W?? UTF-8 ??W? 2 ¨¤H
 	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:94)
 	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:641)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:597)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:557)
-	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:357)
-	at com.smart.web.UserControllerTest.testHandle42(UserControllerTest.java:27)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:475)
+	at com.smart.web.UserControllerTest.testHandle51(UserControllerTest.java:75)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -42,7 +38,7 @@
           </exception> <!-- org.springframework.web.client.HttpServerErrorException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testHandle42 -->
+        </test-method> <!-- testHandle51 -->
       </class> <!-- com.smart.web.UserControllerTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
