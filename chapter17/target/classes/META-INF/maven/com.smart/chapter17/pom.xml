@@ -156,6 +156,11 @@
       <artifactId>jackson-mapper-asl</artifactId>
       <version>1.9.12</version>
   </dependency>
+  <dependency>
+      <groupId>jstl</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
+  </dependency>
   </dependencies>
       <build>
         <plugins>

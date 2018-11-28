@@ -59,7 +59,7 @@ public class UserControllerTest{
 		restTemplate.getMessageConverters().add(jsonConverter);
 		return restTemplate;
 	}
-	@Test
+	//@Test
 	public void testHandle51() throws IOException{
 		RestTemplate restTemplate = buildRestTemplate();
 		User user = new User();
@@ -80,5 +80,20 @@ public class UserControllerTest{
 		Assert.assertEquals("1000", responseUser.getUserId());
 		Assert.assertEquals("tom", responseUser.getUserName());
 		Assert.assertEquals("汤姆", responseUser.getRealName());
+	}
+	
+	@Test
+	public void testHandle82() {
+		RestTemplate restTemplate = new RestTemplate();
+		MultiValueMap<String,String>form = new LinkedMultiValueMap<String,String>();
+		form.add("userName", "tom");
+		form.add("password", "123456");
+		form.add("age", "45");
+		form.add("birthday", "1980-01-01");
+		form.add("salary", "4,500.00");
+		String html = restTemplate.postForObject("http://localhost:8097/bbs/user/handle82.html", 
+				form, String.class);
+		Assert.assertNotNull(html);
+		Assert.assertTrue(html.indexOf("tom")>-1);
 	}
 }

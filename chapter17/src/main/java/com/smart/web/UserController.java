@@ -3,6 +3,8 @@ package com.smart.web;
 import java.io.IOException;
 import java.io.OutputStream;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
@@ -12,6 +14,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.util.FileCopyUtils;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.ValidationUtils;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -161,5 +165,30 @@ public class UserController{
 	@InitBinder
 	public void initBinder(WebDataBinder binder) {
 		binder.registerCustomEditor(User.class, new UserEditor());
+	}
+	
+	@RequestMapping(path="/handle82") 
+	public String handle82(User user) {
+		return "/user/showDetail";
+	}
+	
+	@RequestMapping(path="/handle91")
+	public String handle91(@Valid @ModelAttribute("user") User uer, BindingResult bindingResult) {
+		if(bindingResult.hasErrors()) {
+			return "/user/register_back";
+		}else {
+			return "/user/showDetail";
+		}
+	}
+	@RequestMapping(path="/handle92")
+	public String handle92(@ModelAttribute("user")User user, BindingResult bindingResult) {
+		ValidationUtils.rejectIfEmptyOrWhitespace(bindingResult, "userName", "required");
+		if("aaaa".equalsIgnoreCase(user.getUserName())) {
+			bindingResult.rejectValue("userName", "reserved");
+		}
+		if(bindingResult.hasErrors()) {
+			return "/user/register4";
+		}else
+			return "/user/showDetail";
 	}
 }

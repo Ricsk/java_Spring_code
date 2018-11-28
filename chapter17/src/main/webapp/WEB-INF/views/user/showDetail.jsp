@@ -5,5 +5,9 @@
     </head>
     <body>
     	用户${user.userName}。
+    	密码${user.password}。
+    	真名${user.realName}。
+    	出生${user.birthday }。
+    	工资${user.salary}。
     </body>
 </html>

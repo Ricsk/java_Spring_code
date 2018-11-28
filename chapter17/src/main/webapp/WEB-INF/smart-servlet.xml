@@ -46,14 +46,21 @@
 		</list>
 	</property>
 </bean>
-<bean id="conversionService"
+<!-- <bean id="conversionService"
  	class="org.springframework.context.support.ConversionServiceFactoryBean">
  	<property name="converters">
  		<list>
  			<bean class="com.smart.domain.StringToUserConverter"/>
  		</list>
  	</property>
+</bean> -->
+<bean id="conversionService"
+	class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
+	<property name="converters">
+		<list>
+			<bean class="com.smart.domain.StringToUserConverter"/>
+		</list>
+	</property>
 </bean>
-
 
 </beans>
