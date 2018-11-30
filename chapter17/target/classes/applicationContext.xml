@@ -13,6 +13,12 @@
     <bean id="validator"
     	class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean"/>
     <bean id="messageSource"
-    	class="org.springframework.context.support.ResourceBundleMessageSource"
-    	p:basename="i18n/message"/>
+    	class="org.springframework.context.support.ResourceBundleMessageSource">
+    	<property name="basenames">
+    		<list>
+    			<value>i18n/message</value>
+    			<value>i18n/content</value>
+    		</list>
+    	</property>
+    </bean>
  </beans>

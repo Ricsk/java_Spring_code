@@ -1,2 +1,2 @@
-com\smart\domain\User.class
 com\smart\service\UserService.class
+com\smart\domain\User.class

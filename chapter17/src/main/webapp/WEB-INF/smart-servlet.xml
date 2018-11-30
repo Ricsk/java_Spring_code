@@ -16,9 +16,23 @@
 							
 <context:component-scan base-package="com.smart.web"/>
 <mvc:annotation-driven conversion-service="conversionService"/>
+<bean class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer"
+	p:templateLoaderPath="/WEB-INF/ftl"
+	p:defaultEncoding="UTF-8">
+	<property name="freemarkerSettings">
+		<props>
+			<prop key="classic_compatible">true</prop>
+		</props>
+	</property>
+</bean>
+<bean class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver"
+	p:order="5"
+	p:suffix=".ftl"
+	p:contentType="text/html; charset=utf-8"/>
 <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+	p:viewClass="org.springframework.web.servlet.view.JstlView"
 	p:prefix="/WEB-INF/views/"
-	p:suffix=".jsp"/>
+	p:suffix=".jsp"/> 
 
     <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"
             p:messageConverters-ref="messageConverters">
@@ -63,4 +77,7 @@
 	</property>
 </bean>
 
+<bean class="org.springframework.web.servlet.view.BeanNameViewResolver"
+	p:order="10"/>
+<bean id="userListExcel" class="com.smart.web.UserListExcelView"/>
 </beans>

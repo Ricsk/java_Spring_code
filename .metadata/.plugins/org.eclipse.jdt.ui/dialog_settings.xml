@@ -69,6 +69,13 @@
 		<section name="projects">
 		</section>
 	</section>
+	<section name="DialogBounds_AddDelegateMethodsDialog">
+		<item value="751" key="DIALOG_WIDTH"/>
+		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
+		<item value="718" key="DIALOG_HEIGHT"/>
+		<item value="594" key="DIALOG_X_ORIGIN"/>
+		<item value="71" key="DIALOG_Y_ORIGIN"/>
+	</section>
 	<section name="SourceActionDialog.methods">
 		<item value="false" key="SynchronizedModifier"/>
 		<item value="false" key="Comments"/>
@@ -94,6 +101,8 @@
 		<item value="84" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="completion_proposal_size">
+		<item value="277" key="contextSelector.size.y"/>
+		<item value="337" key="contextSelector.size.x"/>
 	</section>
 	<section name="JarPackageWizard">
 		<item value="false" key="JarPackageWizardPage.INCLUDE_DIRECTORY_ENTRIES"/>

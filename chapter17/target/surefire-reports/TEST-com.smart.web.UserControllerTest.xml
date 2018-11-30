@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.smart.web.UserControllerTest" time="0.526" tests="1" errors="0" skipped="0" failures="0">
+<testsuite name="com.smart.web.UserControllerTest" time="1.622" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="D:\JDK1.8\jre\bin"/>
@@ -26,9 +26,9 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="E:\work_java\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3379181789749855225.tmp"/>
+    <property name="classworlds.conf" value="E:\work_java\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7786936070000301114.tmp"/>
     <property name="sun.jnu.encoding" value="GBK"/>
-    <property name="java.library.path" value="D:\JDK1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_144/bin/server;C:/Program Files/Java/jre1.8.0_144/bin;C:/Program Files/Java/jre1.8.0_144/lib/amd64;;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Common Files\Thunder Network\KanKan\Codecs;D:\putty\;D:\miktex\miktex\bin\x64\;D:\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\MySQL\MySQL Server 5.7\bin\;D:\jee-photon\eclipse;D:\masterSpring\apache-maven-3.3.9-bin\bin;D:\JDK1.8\bin;D:\vc\Tools\WinNT;D:\vc\MSDev98\Bin;D:\vc\Tools;D:\VC98\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;F:\AppServ\Apache24\bin;F:\AppServ\php5;F:\AppServ\MySQL\bin;C:\Users\DEll\AppData\Local\Microsoft\WindowsApps;D:\JDK1.8\bin;C:\Users\DEll\AppData\Local\GitHubDesktop\bin;D:\Microsoft VS Code\bin;C:\Users\DEll\AppData\Local\Microsoft\WindowsApps;D:\Docker Toolbox;C:\Program Files\MySQL\MySQL Server 5.7\bin\;D:\jee-photon\eclipse;D:\masterSpring\apache-maven-3.3.9-bin\bin;;C:\WINDOWS\System32;;."/>
+    <property name="java.library.path" value="D:\JDK1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_144/bin/server;C:/Program Files/Java/jre1.8.0_144/bin;C:/Program Files/Java/jre1.8.0_144/lib/amd64;;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Common Files\Thunder Network\KanKan\Codecs;D:\putty\;D:\miktex\miktex\bin\x64\;D:\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\MySQL\MySQL Server 5.7\bin\;D:\jee-photon\eclipse;D:\masterSpring\apache-maven-3.3.9-bin\bin;D:\JDK1.8\bin;D:\vc\Tools\WinNT;D:\vc\MSDev98\Bin;D:\vc\Tools;D:\VC98\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;F:\AppServ\Apache24\bin;F:\AppServ\php5;F:\AppServ\MySQL\bin;C:\Users\DEll\AppData\Local\Microsoft\WindowsApps;D:\JDK1.8\bin;C:\Users\DEll\AppData\Local\GitHubDesktop\bin;D:\Microsoft VS Code\bin;C:\Users\DEll\AppData\Local\Microsoft\WindowsApps;D:\Docker Toolbox;C:\Program Files\MySQL\MySQL Server 5.7\bin\;D:\jee-photon\eclipse;D:\masterSpring\apache-maven-3.3.9-bin\bin;;C:\WINDOWS\system32;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -60,5 +60,36 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="testHandle82" classname="com.smart.web.UserControllerTest" time="0.526"/>
+  <testcase name="testHandle82" classname="com.smart.web.UserControllerTest" time="1.622">
+    <failure message="I/O error on POST request for &quot;http://localhost:8097/bbs/user/handle82.html&quot;:Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect" type="org.springframework.web.client.ResourceAccessException"><![CDATA[org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8097/bbs/user/handle82.html":Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1202)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1138)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1032)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:966)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:80)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:596)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:557)
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:357)
+	at com.smart.web.UserControllerTest.testHandle82(UserControllerTest.java:94)
+]]></failure>
+    <system-out><![CDATA[Configuring TestNG with: TestNG652Configurator
+]]></system-out>
+  </testcase>
 </testsuite>
