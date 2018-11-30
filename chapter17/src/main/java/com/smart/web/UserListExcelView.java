@@ -1,5 +1,6 @@
 package com.smart.web;
 
+import java.net.URLEncoder;
 import java.util.List;
 import java.util.Map;
 
@@ -15,22 +16,26 @@ import com.smart.domain.User;
 
 public class UserListExcelView extends AbstractXlsView{
 	@Override
-	protected void buildExcelDocument(Map<String, Object> model, Workbook workbook, HttpServletRequest request,
-			HttpServletResponse response) throws Exception{
-		response.setHeader("Context-Disposition", "attachment;filename="+ new String("用户列表".getBytes(), "ISO-8859-1"));
+	protected void buildExcelDocument(Map<String, Object> model,
+									  Workbook workbook , HttpServletRequest request,
+			HttpServletResponse response) throws Exception {		
+		response.setHeader("Content-Disposition", "inline; filename="+ 
+				 URLEncoder.encode("用户列表.xls", "UTF-8"));  
+		//response.setContentType("charset=UTF-8");
 		List<User> userList = (List<User>) model.get("userList");
 		HSSFSheet sheet = (HSSFSheet) workbook.createSheet("users");
 		HSSFRow header = sheet.createRow(0);
-		header.createCell(0).setCellValue("账号");
+		header.createCell(0).setCellValue("帐号");
 		header.createCell(1).setCellValue("姓名");
 		header.createCell(2).setCellValue("生日");
-		
+
 		int rowNum = 1;
-		for(User user:userList) {
+		for (User user : userList) {
 			HSSFRow row = sheet.createRow(rowNum++);
 			row.createCell(0).setCellValue(user.getUserName());
 			row.createCell(1).setCellValue(user.getRealName());
-			String createDate = DateFormatUtils.format(user.getBirthday(), "yyyy-MM-dd");
+			String createDate = DateFormatUtils.format(user.getBirthday(),
+					"yyyy-MM-dd");
 			row.createCell(2).setCellValue(createDate);
 		}
 	}

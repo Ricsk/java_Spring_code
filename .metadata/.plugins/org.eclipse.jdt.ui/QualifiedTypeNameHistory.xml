@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
-<fullyQualifiedTypeName name="org.springframework.util.FileCopyUtils"/>
-<fullyQualifiedTypeName name="org.springframework.core.io.Resource"/>
 <fullyQualifiedTypeName name="org.springframework.core.io.FileSystemResource"/>
 <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
 <fullyQualifiedTypeName name="org.springframework.oxm.xstream.XStreamMarshaller"/>
@@ -30,7 +27,6 @@
 <fullyQualifiedTypeName name="org.springframework.web.context.request.WebRequest"/>
 <fullyQualifiedTypeName name="org.springframework.format.annotation.NumberFormat"/>
 <fullyQualifiedTypeName name="org.springframework.format.annotation.DateTimeFormat"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="javax.validation.constraints.Pattern"/>
 <fullyQualifiedTypeName name="org.hibernate.validator.constraints.Length"/>
 <fullyQualifiedTypeName name="javax.validation.constraints.Past"/>
@@ -60,4 +56,8 @@
 <fullyQualifiedTypeName name="org.apache.poi.hssf.usermodel.HSSFSheet"/>
 <fullyQualifiedTypeName name="org.apache.poi.hssf.usermodel.HSSFRow"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.time.DayOfWeek"/>
+<fullyQualifiedTypeName name="java.time.LocalDate"/>
+<fullyQualifiedTypeName name="java.net.URLEncoder"/>
 </qualifiedTypeNameHistroy>
