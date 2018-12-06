@@ -82,7 +82,7 @@ public class UserControllerTest{
 		Assert.assertEquals("汤姆", responseUser.getRealName());
 	}
 	
-	@Test
+	//@Test
 	public void testHandle82() {
 		RestTemplate restTemplate = new RestTemplate();
 		MultiValueMap<String,String>form = new LinkedMultiValueMap<String,String>();

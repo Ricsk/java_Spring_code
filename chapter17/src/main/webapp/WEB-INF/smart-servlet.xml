@@ -68,7 +68,7 @@
 			<value>com.smart.domain.User</value>
 		</list>
 	</property>
-</bean>
+</bean> 
 <!-- <bean id="conversionService"
  	class="org.springframework.context.support.ConversionServiceFactoryBean">
  	<property name="converters">
@@ -90,4 +90,28 @@
 <bean class="org.springframework.web.servlet.view.BeanNameViewResolver"
 	p:order="10"/>
 <bean id="userListExcel" class="com.smart.web.UserListExcelView"/>
+<!-- 本地化配置方式 -->
+<!-- <bean id="localeResolver"
+	class="org.springframework.web.servlet.i18n.CookieLocaleResolver"
+	p:cookieName="clientLanguate"
+	p:cookieMaxAge="100000"
+	p:cookiePath="/"
+	p:defaultLocale="zh_CN"/>
+	
+<bean id="localeResolver" class="org.springframework.web.servlet.i18n.SessionLocaleResolver"/>
+<mvc:interceptors>
+	<bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor"/>
+</mvc:interceptors>
+ -->
+<bean id="multipartResolver"
+	class="org.springframework.web.multipart.commons.CommonsMultipartResolver"
+	p:defaultEncoding="UTF-8"
+	p:maxUploadSize="5242880"
+	p:uploadTempDir="file:/e:/temp"/>
+	
+<!-- 	<mvc:default-servlet-handler/> -->
+<bean id="rpe" class="com.smart.web.ResourcePathExposer"
+	init-method="init"/>
+<mvc:resources mapping="#{rpe.resourceRoot}/**" location="/"/>
+
 </beans>

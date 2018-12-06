@@ -81,12 +81,14 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.smart.chapter18"/>
 			<item value="com.smart.chapter17"/>
 		</list>
 		<list key="groupId">
 			<item value="com.smart"/>
 		</list>
 		<list key="artifactId">
+			<item value="chapter18"/>
 			<item value="chapter17"/>
 		</list>
 		<list key="projectNameTemplate">

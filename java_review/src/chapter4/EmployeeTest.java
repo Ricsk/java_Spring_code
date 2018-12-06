@@ -1,6 +1,7 @@
 package chapter4;
 
 import java.time.LocalDate;
+import java.util.Random;
 
 /**
  * tests the Employee class (from book)
@@ -34,6 +35,7 @@ public class EmployeeTest{
 	}
 }
 class Employee{
+	private static int nextId;
 	private String name;
 	private double salary;
 	private LocalDate hireDay;
@@ -43,12 +45,28 @@ class Employee{
 		this.salary = s;
 		this.hireDay = LocalDate.of(year, month, day);
 	}
-	
-	public Employee() {}
+/*	static{
+		Random generator = new Random();
+		nextId = generator.nextInt(10000);
+	}*/
+	{
+		nextId++;
+	}
+	public Employee() {Employee.nextId = 0;}
 	public String getName() {
 		return name;
 	}
+	public Employee(String name, double salary) {
+		//System.out.println(nextId);
+		this.name = name;
+		this.salary = salary;
+	}
 
+	public Employee(double salary) {
+		this("Employee#"+nextId, salary);
+		//System.out.println("what>");
+		//nextId++;
+	}
 	public double getSalary() {
 		return salary;
 	}
@@ -63,5 +81,23 @@ class Employee{
 	
 	public boolean equals(Employee other) {
 		return this.name.equals(other.name);
+	}
+	
+	public static int getNextId() {
+		//Random generator = new Random();
+		//System.out.println(generator.nextInt(1000));
+		return Employee.nextId;
+	}
+	public static void main(String[] args) {
+		//调用另一个构造器
+		/*System.out.println(Employee.getNextId());
+		Employee s = new Employee(100);
+		System.out.println(s.getName());*/
+		//System.out.println(Employee.getNextId());
+		//s = new Employee("sss", 100);
+		/*s = new Employee(100);
+		System.out.println(s.getName());
+		Employee.getNextId();*/
+		//System.out.println(Employee.getNextId());
 	}
 }

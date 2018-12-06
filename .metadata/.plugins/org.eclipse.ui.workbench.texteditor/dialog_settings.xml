@@ -2,27 +2,27 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="" key="selection"/>
+		<item value="getCurr" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="getcurr"/>
+			<item value="LocalDate("/>
+			<item value="LocalDate"/>
+			<item value="create"/>
+			<item value="of"/>
+			<item value="setOut"/>
+			<item value="setout"/>
+			<item value="out"/>
+			<item value="success"/>
+			<item value="commons"/>
+			<item value="commons-io"/>
+			<item value="io"/>
+			<item value="jakarta"/>
 			<item value="userListXml"/>
 			<item value="apache"/>
-			<item value="workb"/>
-			<item value="work"/>
-			<item value="wor"/>
-			<item value="free"/>
-			<item value="fmt"/>
-			<item value="tag"/>
-			<item value="tar"/>
-			<item value="targ"/>
-			<item value="jstl"/>
-			<item value="303"/>
-			<item value="validator"/>
-			<item value="jackson"/>
-			<item value="jack"/>
 		</list>
 		<list key="replacehistory">
 		</list>

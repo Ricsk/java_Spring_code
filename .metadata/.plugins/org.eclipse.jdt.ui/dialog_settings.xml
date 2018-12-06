@@ -52,21 +52,114 @@
 	<section name="javadoc">
 		<item value="public" key="access"/>
 		<item value="false" key="noindex"/>
+		<item value="E:\work_java\java_review\javadoc.xml" key="antpath"/>
 		<item value="false" key="nodeprecatedlist"/>
 		<item value="true" key="use"/>
-		<item value="false" key="nodeprecated"/>
 		<item value="true" key="author"/>
+		<item value="false" key="nodeprecated"/>
 		<item value="false" key="nonavbar"/>
 		<item value="" key="docletpath"/>
-		<item value="" key="javadoc_command_history"/>
-		<item value="1.3" key="source"/>
+		<item value="D:\JDK1.8\bin\javadoc.exe" key="javadoc_command_history"/>
+		<item value="1.8" key="source"/>
 		<item value="true" key="version"/>
 		<item value="" key="docletname"/>
 		<item value="true" key="splitindex"/>
 		<item value="true" key="fromStandard"/>
 		<item value="false" key="notree"/>
+		<item value="E:\work_java\java_review\doc" key="destdir"/>
+		<item value="-encoding UTF-8 -charset UTF-8" key="additionalparam"/>
 		<item value="false" key="openinbrowser"/>
 		<section name="projects">
+			<section name="java_finalexam">
+				<item value="F:\javasourse\java_finalexam\javadoc.xml" key="antpath"/>
+				<item value="F:\javasourse\java_finalexam\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="chapter4">
+				<item value="E:\work_java\chapter4\javadoc.xml" key="antpath"/>
+				<item value="E:\work_java\chapter4\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="chapter2">
+				<item value="E:\work_java\chapter2\javadoc.xml" key="antpath"/>
+				<item value="E:\work_java\chapter2\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="chapter8">
+				<item value="E:\work_java\chapter8\javadoc.xml" key="antpath"/>
+				<item value="E:\work_java\chapter8\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="chapter7">
+				<item value="E:\work_java\chapter7\javadoc.xml" key="antpath"/>
+				<item value="E:\work_java\chapter7\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="4.2.1">
+				<item value="E:\work_java\4.2.1\javadoc.xml" key="antpath"/>
+				<item value="E:\work_java\4.2.1\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="chapter6_2">
+				<item value="E:\work_java\chapter6_2\javadoc.xml" key="antpath"/>
+				<item value="E:\work_java\chapter6_2\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="chapter5">
+				<item value="E:\work_java\chapter5\javadoc.xml" key="antpath"/>
+				<item value="E:\work_java\chapter5\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="chapter17">
+				<item value="E:\work_java\chapter17\javadoc.xml" key="antpath"/>
+				<item value="E:\work_java\chapter17\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="chapter3_1">
+				<item value="E:\work_java\chapter3_1\javadoc.xml" key="antpath"/>
+				<item value="E:\work_java\chapter3_1\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="chapter6_1">
+				<item value="E:\work_java\chapter6_1\javadoc.xml" key="antpath"/>
+				<item value="E:\work_java\chapter6_1\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="chapter3_s">
+				<item value="E:\work_java\chapter3_s\javadoc.xml" key="antpath"/>
+				<item value="E:\work_java\chapter3_s\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="chapter13">
+				<item value="E:\work_java\chapter13\javadoc.xml" key="antpath"/>
+				<item value="E:\work_java\chapter13\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Spring_Hello">
+				<item value="E:\work_java\Spring_Hello\javadoc.xml" key="antpath"/>
+				<item value="E:\work_java\Spring_Hello\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="chapter10">
+				<item value="E:\work_java\chapter10\javadoc.xml" key="antpath"/>
+				<item value="E:\work_java\chapter10\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="chapter11">
+				<item value="E:\work_java\chapter11\javadoc.xml" key="antpath"/>
+				<item value="E:\work_java\chapter11\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="java_review">
+				<item value="E:\work_java\java_review\javadoc.xml" key="antpath"/>
+				<item value="E:\work_java\java_review\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="hello2">
+				<item value="E:\work_java\hello2\javadoc.xml" key="antpath"/>
+				<item value="E:\work_java\hello2\doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
 		</section>
 	</section>
 	<section name="DialogBounds_AddDelegateMethodsDialog">

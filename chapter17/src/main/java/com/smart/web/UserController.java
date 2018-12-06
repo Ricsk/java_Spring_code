@@ -1,5 +1,6 @@
 package com.smart.web;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.ArrayList;
@@ -31,11 +32,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.smart.domain.User;
 import com.smart.domain.UserEditor;
 import com.smart.service.UserService;
+
 @Controller
 @RequestMapping("/user")
 @SessionAttributes("user")
@@ -289,5 +292,61 @@ public class UserController{
 		userList.add(user2);
 		mm.addAttribute("userList", userList);
 		return "userListJson";
+	}
+	
+	@RequestMapping(path = "/showUserListMix")
+	public String showUserListMix(ModelMap mm) {
+		Calendar calendar = new GregorianCalendar();
+		List<User>userList = new ArrayList<User>();
+		User user1 = new User();
+		user1.setUserName("tom");
+		user1.setRealName("汤姆");
+		calendar.set(1980, 1,1);
+		user1.setBirthday(calendar.getTime());
+		User user2 = new User();
+		user2.setUserName("john");
+		user2.setRealName("约翰");
+		user2.setBirthday(calendar.getTime());
+		userList.add(user1);
+		userList.add(user2);
+		mm.addAttribute("userList", userList);
+		return "userListMix";
+	}
+	
+	@RequestMapping(path = "/uploadPage")
+	public String updatePage() {
+		return "uploadPage";
+		//retrun "redirect:uploadPage.html";
+	}
+	@RequestMapping(path = "/success")
+	public String Success() {
+		return "success";
+	}
+	@RequestMapping(path = "/upload")
+	public String updateThumb(@RequestParam("name") String name, 
+			@RequestParam("file") MultipartFile file) throws Exception{
+		if(!file.isEmpty()) {
+			file.transferTo(new File("e:/temp/" + file.getOriginalFilename()));
+			return "redirect:success.html";
+		}else {
+			return "redirect:fail.html";
+		}
+	}
+/*	@RequestMapping(path = "/hello")
+	public String hello() {
+		return "hello";
+	}*/
+	
+}
+
+@Controller
+class OtherTest{
+	@RequestMapping(path="/hello")
+	public String websocketTest() {
+		return "hello";
+	}
+	@RequestMapping(path="/test")
+	public String resTest() {
+		return "test";
 	}
 }

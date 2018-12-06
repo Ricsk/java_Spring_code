@@ -21,7 +21,7 @@
       }
 
       function sayHello() {
-        console.log('发送消息： hello world！')
+        console.log('发送消息： hello world！');
         sock.send('hello world!');
       }
     </script>
