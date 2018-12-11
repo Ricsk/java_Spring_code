@@ -1,12 +1,12 @@
 package chapter5;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class EmployeeBasic extends Person
 {
    private double salary;
    private LocalDate hireDay;
-
    public EmployeeBasic(String n, double s, int year, int month, int day)
    {
       super(n);
@@ -16,7 +16,9 @@ public class EmployeeBasic extends Person
    public EmployeeBasic() {
 	   
    }
-
+   public EmployeeBasic(String name) {
+	   super(name);
+   }
    public double getSalary()
    {
       return salary;
@@ -45,8 +47,26 @@ public class EmployeeBasic extends Person
 	   if(getClass() != otherObject.getClass())
 		   return false;
 	   EmployeeBasic other = (EmployeeBasic)otherObject;
-	   return super.getName().equals(other.getName())
+	   /*return super.getName().equals(other.getName())
 			   && salary == other.salary
-			   && hireDay.equals(other.hireDay);
+			   && hireDay.equals(other.hireDay);*/
+	   return Objects.equals(super.getName(),  other.getName())
+			   && salary == other.salary
+			   && Objects.equals(this.hireDay, other.hireDay);
+   }
+   
+   public int hashCode() {
+	   /*return 7 * name.hashCode()
+			   + 11 * new Double(salary).hashCode()
+			   + 13 * hireDay.hashCode();*/
+	   
+	   /*return 7 * Objects.hashCode(super.getName())
+			   + 11 * Double.hashCode(salary)
+			   + 13 * Objects.hashCode(hireDay);*/
+	   return Objects.hash(super.getName(), salary, hireDay);
+   }
+   
+   public String toString() {
+	   return getClass().getName() + "[name=" + super.getName() + ",salary=" + salary + ",hirDay=" + hireDay + "]";
    }
 }

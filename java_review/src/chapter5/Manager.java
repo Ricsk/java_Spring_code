@@ -16,6 +16,17 @@ public class Manager extends EmployeeBasic{
 	public Manager() {
 		super();
 	}
+	
+	public boolean equals(Object otherObject) {
+		if(!super.equals(otherObject)) 
+			return false;
+		Manager other = (Manager) otherObject;
+		return bonus == other.bonus;
+	}
+	
+	public String toString() {
+		return super.toString() + "[bonus=" + bonus + "]";
+	}
 /*	public Manager(int x) {
 		super();
 		System.out.println(x);

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Command line test" failures="2" tests="3" time="3.855" errors="0">
+  <properties/>
+  <testcase name="addBoard" time="0.368" classname="com.smart.dao.BoardDaoTest"/>
+  <testcase name="removeBoard" time="0.011" classname="com.smart.dao.BoardDaoTest">
+    <failure type="java.lang.IllegalArgumentException" message="attempt to create delete event with null entity">
+      <![CDATA[java.lang.IllegalArgumentException: attempt to create delete event with null entity
+	at org.hibernate.event.spi.DeleteEvent.<init>(DeleteEvent.java:45)
+	at org.hibernate.internal.SessionImpl.delete(SessionImpl.java:935)
+	at org.springframework.orm.hibernate4.HibernateTemplate$24.doInHibernate(HibernateTemplate.java:794)
+	at org.springframework.orm.hibernate4.HibernateTemplate.doExecute(HibernateTemplate.java:341)
+	at org.springframework.orm.hibernate4.HibernateTemplate.executeWithNativeSession(HibernateTemplate.java:309)
+	at org.springframework.orm.hibernate4.HibernateTemplate.delete(HibernateTemplate.java:787)
+	at org.springframework.orm.hibernate4.HibernateTemplate.delete(HibernateTemplate.java:782)
+	at com.smart.dao.BaseDao.remove(BaseDao.java:55)
+	at com.smart.dao.BoardDaoTest.removeBoard(BoardDaoTest.java:50)
+	at org.unitils.UnitilsTestNG.run(UnitilsTestNG.java:103)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:60)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:153)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+... Removed 30 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="getBoard" time="0.006" classname="com.smart.dao.BoardDaoTest">
+    <failure type="org.hibernate.ObjectNotFoundException" message="No row with the given identifier exists: [com.smart.domain.Board#1]">
+      <![CDATA[org.hibernate.ObjectNotFoundException: No row with the given identifier exists: [com.smart.domain.Board#1]
+	at org.hibernate.internal.SessionFactoryImpl$1$1.handleEntityNotFound(SessionFactoryImpl.java:244)
+	at org.hibernate.proxy.AbstractLazyInitializer.checkTargetState(AbstractLazyInitializer.java:261)
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:175)
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:285)
+	at org.hibernate.proxy.pojo.javassist.JavassistLazyInitializer.invoke(JavassistLazyInitializer.java:185)
+	at com.smart.domain.Board_$$_javassist_0.getBoardName(Board_$$_javassist_0.java)
+	at com.smart.dao.BoardDaoTest.getBoard(BoardDaoTest.java:58)
+	at org.unitils.UnitilsTestNG.run(UnitilsTestNG.java:103)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:60)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:153)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+... Removed 30 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

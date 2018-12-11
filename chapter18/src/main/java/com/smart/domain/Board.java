@@ -1,10 +1,16 @@
 package com.smart.domain;
 
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.Cache;
@@ -19,13 +25,16 @@ public class Board extends BaseDomain{
 	private int boardId;
 	
 	@Column(name="board_name")
-	private int boardName;
+	private String boardName;
 	
 	@Column(name="board_desc")
-	private int boardDesc;
+	private String boardDesc;
 	
 	@Column(name="topic_num")
 	private int topicNum;
+	
+	@ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE},mappedBy = "manBoards", fetch = FetchType.LAZY)
+	private Set<User> users = new HashSet<User>();
 	
 	public int getBoardId() {
 		return boardId;
@@ -35,21 +44,7 @@ public class Board extends BaseDomain{
 		this.boardId = boardId;
 	}
 
-	public int getBoardName() {
-		return boardName;
-	}
 
-	public void setBoardName(int boardName) {
-		this.boardName = boardName;
-	}
-
-	public int getBoardDesc() {
-		return boardDesc;
-	}
-
-	public void setBoardDesc(int boardDesc) {
-		this.boardDesc = boardDesc;
-	}
 
 	public int getTopicNum() {
 		return topicNum;
@@ -59,5 +54,21 @@ public class Board extends BaseDomain{
 		this.topicNum = topicNum;
 	}
 
+	public String getBoardName() {
+		return boardName;
+	}
+
+	public void setBoardName(String boardName) {
+		this.boardName = boardName;
+	}
+
+	public String getBoardDesc() {
+		return boardDesc;
+	}
+
+	public void setBoardDesc(String boardDesc) {
+		this.boardDesc = boardDesc;
+	}
+	
 	
 }

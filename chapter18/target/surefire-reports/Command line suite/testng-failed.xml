@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" skipfailedinvocationCounts="false" verbose="0" name="Failed suite [Command line suite]" junit="false" annotations="JDK">
+  <test name="Command line test(failed)" junit="false" annotations="JDK">
+    <classes>
+      <class name="com.smart.dao.BoardDaoTest">
+        <methods>
+          <include name="unitilsBeforeTestSetUp"/>
+          <include name="unitilsAfterTestTearDown"/>
+          <include name="removeBoard"/>
+          <include name="getBoard"/>
+          <include name="unitilsBeforeClass"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

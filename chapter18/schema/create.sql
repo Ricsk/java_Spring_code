@@ -1,5 +1,16 @@
 create database spring4chapter18;
 use spring4chapter18;
+drop table if exists t_board;
+
+drop table if exists t_board_manager;
+
+drop table if exists t_post;
+
+drop table if exists t_topic;
+
+drop table if exists t_user;
+
+drop table if exists t_login_log;
 create table t_board(
 	board_id int not null auto_increment 
     primary key comment '论坛版块ID',
@@ -88,6 +99,7 @@ create table `t_post`(
     `create_time` datetime not null comment '创建时间',
 KEY `IDX_POST_TOPIC_ID` (`topic_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8 COMMENT='帖子';
+
 INSERT INTO `t_post` VALUES (1,1,1,1,1,'SpringMVC','Spring Web MVC是一种基于Java的实现了Web MVC设计模式的请求驱动类型的轻量级Web框架\r\n','2016-03-07');
 INSERT INTO `t_post` VALUES (2,1,2,1,1,'配置\r\详解','谁能告诉我SpringMVC的详细配置呢','2016-03-07');
 INSERT INTO `t_post` VALUES (3,1,3,1,1,'test3','http://localhost/forum/boardManage.do?method=addTopicPage&boardId=1','2016-03-16');

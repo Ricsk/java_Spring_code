@@ -20,6 +20,10 @@ import org.hibernate.annotations.CacheConcurrencyStrategy;
 @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
 @Table(name = "t_topic")
 public class Topic extends BaseDomain{
+	
+	private static final int DIGEST_TOPIC = 1;
+	
+	private static final int NOT_DIGEST_TOPIC = 0;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "topic_id")
@@ -41,7 +45,7 @@ public class Topic extends BaseDomain{
 	private int topicReplies;
 	
 	@Column(name = "digest")
-	private int digest;
+	private int digest = NOT_DIGEST_TOPIC;
 	
 	@ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE} )
 	@JoinColumn(name = "board_id")

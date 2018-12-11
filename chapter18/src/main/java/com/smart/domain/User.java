@@ -23,6 +23,14 @@ import org.hibernate.annotations.CacheConcurrencyStrategy;
 @Table(name = "t_user")
 public class User extends BaseDomain{
 	
+	public static final int USER_LOCK = 1;
+	
+	public static final int USER_UNLOCK = 0;
+	
+	public static final int FORUM_ADMIN = 2;
+	
+	public static final int NORMAL_USER = 1;
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "user_id")
@@ -37,8 +45,11 @@ public class User extends BaseDomain{
 	@Column(name = "credit")
 	private int credit;
 	
+	@Column(name = "user_type")
+	private int userType = NORMAL_USER;
+	
 	@Column(name = "locked")
-	private int locked;
+	private int locked = USER_UNLOCK;
 	
 	@Column(name = "last_visit")
 	private Date lastVisit;
@@ -115,6 +126,14 @@ public class User extends BaseDomain{
 
 	public void setManBoards(Set<Board> manBoards) {
 		this.manBoards = manBoards;
+	}
+
+	public int getUserType() {
+		return userType;
+	}
+
+	public void setUserType(int userType) {
+		this.userType = userType;
 	}
 	
 }
