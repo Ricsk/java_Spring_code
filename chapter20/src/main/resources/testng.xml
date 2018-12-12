@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestAll">
+
+    <!-- Run test method on group "selenium" only -->
+    <test name="selenium">
+
+        <groups>
+            <run>
+                <include name="class-group" />
+                <include name="group3" />
+            </run>
+        </groups>
+
+        <classes>
+            <class name="sample.testng.TestNGGroupsTest1" />
+            <class name="sample.testng.TestNGGroupsTest2" />
+        </classes>
+
+    </test>
+
+</suite>

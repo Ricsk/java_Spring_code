@@ -11,7 +11,7 @@ public class EmployeeSortTest{
 		staff[1] = new Employee("Carl Cracker", 36000);
 		staff[2] = new Employee("Tony Tester", 37000);
 		
-		Arrays.sort(staff);
+		//Arrays.sort(staff);
 		Arrays.sort(staff, (first, second) ->
 			first.getName() .compareTo(second.getName())
 				);
@@ -19,10 +19,10 @@ public class EmployeeSortTest{
 			System.out.println(e);
 		}
 		
-		Comparable x;//ok
+		/*Comparable x;//ok
 		//x = new Comparable();//error
 		x = new Employee();//ok
-		System.out.println(x instanceof Comparable);
+		System.out.println(x instanceof Comparable);*/
 		
 	}
 }

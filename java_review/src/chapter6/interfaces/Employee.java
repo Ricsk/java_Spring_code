@@ -3,7 +3,7 @@ package chapter6.interfaces;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-public class Employee implements Comparable<Employee>, Cloneable{
+public class Employee implements Cloneable{
 	private String name;
 	private double salary;
 	private Date hireDay;

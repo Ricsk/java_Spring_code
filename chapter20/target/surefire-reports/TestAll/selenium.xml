@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="selenium" failures="0" tests="4" time="0.012" errors="0">
+  <properties/>
+  <testcase name="testMethod1" time="0.002" classname="sample.testng.TestNGGroupsTest1"/>
+  <testcase name="testMethod2" time="0.0" classname="sample.testng.TestNGGroupsTest1"/>
+  <testcase name="testMethod3" time="0.001" classname="sample.testng.TestNGGroupsTest1"/>
+  <testcase name="testMethod5" time="0.0" classname="sample.testng.TestNGGroupsTest2"/>
+</testsuite>

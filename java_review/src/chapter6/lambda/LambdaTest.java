@@ -2,6 +2,7 @@ package chapter6.lambda;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -17,7 +18,7 @@ public class LambdaTest{
 	 */
 	public static void main(String[] args) throws InterruptedException {
 		//排序lambda
-		String[] planets = new String[] {"Mercury", "Venus", "Earth", "Mars",
+		String[] planets = new String[] {"Mercury", "Venus", "earth", "Mars",
 				"Jupiter", "Saturn", "Uranus", "Neptune"};
 		/*System.out.println(Arrays.toString(planets));
 		System.out.println("Sorted in dictionary order");
@@ -49,12 +50,19 @@ public class LambdaTest{
 		t.start();
 		Thread.currentThread().sleep(3000);
 		t.stop();*/
-		/*Arrays.sort(planets);
+/*		Arrays.sort(planets);
 		System.out.println(Arrays.toString(planets));
 		Arrays.sort(planets, String::compareToIgnoreCase);
+		myComparabled com = new myComparabled();
+		Arrays.sort(planets, com::length);
+		System.out.println(Arrays.toString(planets));
+		Arrays.sort(planets, myComparabled::length2);
 		System.out.println(Arrays.toString(planets));*/
-		TimedGreeter t = new TimedGreeter();
-		t.greet();
+		//Arrays.sort(planets, myComparabled::length);//error
+	//	System.out.println(Arrays.toString(planets));
+/*		TimedGreeter t = new TimedGreeter();
+		t.greet();*/
+		
 	}
 	}
 class Greeter{
@@ -69,5 +77,14 @@ class TimedGreeter extends Greeter{
 		t.start();
 		Thread.currentThread().sleep(2000);
 		t.stop();
+	}
+}
+
+class myComparabled{
+	public int length(String x, String y) {
+		return x.length() - y.length();
+	}
+	public static int length2(String x, String y) {
+		return x.length() - y.length();
 	}
 }

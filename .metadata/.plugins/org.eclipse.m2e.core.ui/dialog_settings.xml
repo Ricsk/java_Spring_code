@@ -81,6 +81,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.smart.chapter20"/>
 			<item value="com.smart.chapter18"/>
 			<item value="com.smart.chapter17"/>
 		</list>
@@ -88,6 +89,7 @@
 			<item value="com.smart"/>
 		</list>
 		<list key="artifactId">
+			<item value="chapter20"/>
 			<item value="chapter18"/>
 			<item value="chapter17"/>
 		</list>
