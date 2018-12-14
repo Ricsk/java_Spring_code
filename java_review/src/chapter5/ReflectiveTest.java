@@ -35,7 +35,7 @@ public class ReflectiveTest{
 		
 		
 		//利用reflect分析类
-	/*	String name;
+	String name;
 		if(args.length > 0)
 			name = args[0];
 		else {
@@ -61,7 +61,7 @@ public class ReflectiveTest{
 			System.out.println("}");
 		}catch(ClassNotFoundException e) {
 			e.printStackTrace();
-		}*/
+		}
 		
 		//在运行时分析对象即是得到数据域的实际内容
 		//这里由于我的name是定义在person里的所以和书上相比作了改进
@@ -106,7 +106,7 @@ public class ReflectiveTest{
 	}
 	
 	public static void printMethods(Class cl) {
-		Method[] methods = cl.getMethods();
+		Method[] methods = cl.getDeclaredMethods();
 		for(Method m : methods) {
 			String name = m.getName();
 			Class retType = m.getReturnType();

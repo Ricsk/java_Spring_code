@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 4.12 sec <<< FAILURE!
-removeBoard(com.smart.dao.BoardDaoTest)  Time elapsed: 0.016 sec  <<< FAILURE!
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 4.411 sec <<< FAILURE!
+removeBoard(com.smart.dao.BoardDaoTest)  Time elapsed: 0.018 sec  <<< FAILURE!
 java.lang.IllegalArgumentException: attempt to create delete event with null entity
 	at org.hibernate.event.spi.DeleteEvent.<init>(DeleteEvent.java:45)
 	at org.hibernate.internal.SessionImpl.delete(SessionImpl.java:935)

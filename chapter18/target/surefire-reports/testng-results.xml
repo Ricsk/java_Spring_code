@@ -6,7 +6,7 @@
     </groups>
     <test name="Command line test">
       <class name="com.smart.dao.BoardDaoTest">
-        <test-method status="PASS" signature="unitilsAfterTestTearDown(java.lang.reflect.Method)" name="unitilsAfterTestTearDown" is-config="true" duration-ms="7" started-at="2018-12-10T21:16:11Z" finished-at="2018-12-10T21:16:11Z">
+        <test-method status="PASS" signature="unitilsAfterTestTearDown(java.lang.reflect.Method)" name="unitilsAfterTestTearDown" is-config="true" duration-ms="8" started-at="2018-12-12T13:05:23Z" finished-at="2018-12-12T13:05:23Z">
           <params>
             <param index="0">
               <value>
@@ -15,7 +15,7 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="unitilsBeforeTestSetUp(java.lang.reflect.Method)" name="unitilsBeforeTestSetUp" is-config="true" duration-ms="344" started-at="2018-12-10T21:16:11Z" finished-at="2018-12-10T21:16:11Z">
+        <test-method status="PASS" signature="unitilsBeforeTestSetUp(java.lang.reflect.Method)" name="unitilsBeforeTestSetUp" is-config="true" duration-ms="359" started-at="2018-12-12T13:05:23Z" finished-at="2018-12-12T13:05:23Z">
           <params>
             <param index="0">
               <value>
@@ -24,7 +24,7 @@
             </param>
           </params>
         </test-method>
-        <test-method status="FAIL" signature="getBoard()" name="getBoard" duration-ms="6" started-at="2018-12-10T21:16:11Z" finished-at="2018-12-10T21:16:11Z">
+        <test-method status="FAIL" signature="getBoard()" name="getBoard" duration-ms="6" started-at="2018-12-12T13:05:23Z" finished-at="2018-12-12T13:05:23Z">
           <exception class="org.hibernate.ObjectNotFoundException">
             <message>
               <![CDATA[No row with the given identifier exists: [com.smart.domain.Board#1]]]>
@@ -82,7 +82,7 @@
             </full-stacktrace>
           </exception>
         </test-method>
-        <test-method status="PASS" signature="unitilsBeforeTestSetUp(java.lang.reflect.Method)" name="unitilsBeforeTestSetUp" is-config="true" duration-ms="333" started-at="2018-12-10T21:16:11Z" finished-at="2018-12-10T21:16:11Z">
+        <test-method status="PASS" signature="unitilsBeforeTestSetUp(java.lang.reflect.Method)" name="unitilsBeforeTestSetUp" is-config="true" duration-ms="345" started-at="2018-12-12T13:05:23Z" finished-at="2018-12-12T13:05:23Z">
           <params>
             <param index="0">
               <value>
@@ -91,7 +91,7 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="unitilsBeforeTestSetUp(java.lang.reflect.Method)" name="unitilsBeforeTestSetUp" is-config="true" duration-ms="2595" started-at="2018-12-10T21:16:08Z" finished-at="2018-12-10T21:16:10Z">
+        <test-method status="PASS" signature="unitilsBeforeTestSetUp(java.lang.reflect.Method)" name="unitilsBeforeTestSetUp" is-config="true" duration-ms="2659" started-at="2018-12-12T13:05:20Z" finished-at="2018-12-12T13:05:22Z">
           <params>
             <param index="0">
               <value>
@@ -100,9 +100,9 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="addBoard()" name="addBoard" duration-ms="368" started-at="2018-12-10T21:16:10Z" finished-at="2018-12-10T21:16:11Z">
+        <test-method status="PASS" signature="addBoard()" name="addBoard" duration-ms="396" started-at="2018-12-12T13:05:22Z" finished-at="2018-12-12T13:05:23Z">
         </test-method>
-        <test-method status="PASS" signature="unitilsAfterTestTearDown(java.lang.reflect.Method)" name="unitilsAfterTestTearDown" is-config="true" duration-ms="3" started-at="2018-12-10T21:16:11Z" finished-at="2018-12-10T21:16:11Z">
+        <test-method status="PASS" signature="unitilsAfterTestTearDown(java.lang.reflect.Method)" name="unitilsAfterTestTearDown" is-config="true" duration-ms="3" started-at="2018-12-12T13:05:23Z" finished-at="2018-12-12T13:05:23Z">
           <params>
             <param index="0">
               <value>
@@ -111,7 +111,7 @@
             </param>
           </params>
         </test-method>
-        <test-method status="FAIL" signature="removeBoard()" name="removeBoard" duration-ms="11" started-at="2018-12-10T21:16:11Z" finished-at="2018-12-10T21:16:11Z">
+        <test-method status="FAIL" signature="removeBoard()" name="removeBoard" duration-ms="14" started-at="2018-12-12T13:05:23Z" finished-at="2018-12-12T13:05:23Z">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[attempt to create delete event with null entity]]>
@@ -171,9 +171,9 @@
             </full-stacktrace>
           </exception>
         </test-method>
-        <test-method status="PASS" signature="unitilsBeforeClass()" name="unitilsBeforeClass" is-config="true" duration-ms="172" started-at="2018-12-10T21:16:08Z" finished-at="2018-12-10T21:16:08Z">
+        <test-method status="PASS" signature="unitilsBeforeClass()" name="unitilsBeforeClass" is-config="true" duration-ms="214" started-at="2018-12-12T13:05:19Z" finished-at="2018-12-12T13:05:20Z">
         </test-method>
-        <test-method status="PASS" signature="unitilsAfterTestTearDown(java.lang.reflect.Method)" name="unitilsAfterTestTearDown" is-config="true" duration-ms="2" started-at="2018-12-10T21:16:11Z" finished-at="2018-12-10T21:16:11Z">
+        <test-method status="PASS" signature="unitilsAfterTestTearDown(java.lang.reflect.Method)" name="unitilsAfterTestTearDown" is-config="true" duration-ms="3" started-at="2018-12-12T13:05:23Z" finished-at="2018-12-12T13:05:23Z">
           <params>
             <param index="0">
               <value>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Command line test" failures="2" tests="3" time="3.855" errors="0">
+<testsuite name="Command line test" failures="2" tests="3" time="4.022" errors="0">
   <properties/>
-  <testcase name="addBoard" time="0.368" classname="com.smart.dao.BoardDaoTest"/>
-  <testcase name="removeBoard" time="0.011" classname="com.smart.dao.BoardDaoTest">
+  <testcase name="addBoard" time="0.396" classname="com.smart.dao.BoardDaoTest"/>
+  <testcase name="removeBoard" time="0.014" classname="com.smart.dao.BoardDaoTest">
     <failure type="java.lang.IllegalArgumentException" message="attempt to create delete event with null entity">
       <![CDATA[java.lang.IllegalArgumentException: attempt to create delete event with null entity
 	at org.hibernate.event.spi.DeleteEvent.<init>(DeleteEvent.java:45)

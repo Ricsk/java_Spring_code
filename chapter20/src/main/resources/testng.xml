@@ -6,17 +6,20 @@
     <!-- Run test method on group "selenium" only -->
     <test name="selenium">
 
-        <groups>
+<!--         <groups>
             <run>
                 <include name="class-group" />
                 <include name="group3" />
             </run>
-        </groups>
+        </groups> -->
 
         <classes>
-            <class name="sample.testng.TestNGGroupsTest1" />
-            <class name="sample.testng.TestNGGroupsTest2" />
-        </classes>
+<!--             <class name="sample.testng.TestNGGroupsTest1" />
+            <class name="sample.testng.TestNGGroupsTest2" /> -->
+<!--             <class name="sample.unitils.AssertReflectionEqualsTest"/>
+
+ 			<class name="sample.unitils.AssertLenientEqualsTest"/> -->
+         </classes>
 
     </test>
 
