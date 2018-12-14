@@ -29,18 +29,113 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">selenium</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">selenium</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0</td><td class="numi">2.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <a id="summary"></a>
 <table cellspacing=0 cellpadding=0 class="passed">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
-<tr><th colspan="4">selenium &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">sample.unitils.AssertLenientEqualsTest<td><a href="#m1">testLenientEquals</a></td><td class="numi">1</td><td class="numi">66</td></tr>
-<tr class="passedeven"><td rowspan="1">sample.unitils.AssertReflectionEqualsTest<td><a href="#m2">testReflection</a></td><td class="numi">1</td><td class="numi">46</td></tr>
+<tr><th colspan="4">selenium &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">com.smart.dao.UserDaoTest<td><a href="#m1">unitilsBeforeTestSetUp</a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr><th colspan="4">selenium &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">com.smart.dao.UserDaoTest<td><a href="#m2">findUserByUserName</a></td><td class="numi">1</td><td class="numi">0</td></tr>
 </table>
 <h1>selenium</h1>
-<a id="m1"></a><h2>sample.unitils.AssertLenientEqualsTest:testLenientEquals</h2>
+<a id="m1"></a><h2>com.smart.dao.UserDaoTest:unitilsBeforeTestSetUp</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">public void com.smart.dao.UserDaoTest.findUserByUserName()</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Error inserting test data from DbUnit dataset for method public void com.smart.dao.UserDaoTest.findUserByUserName()</p>
+org.unitils.dbunit.DbUnitModule.insertDataSet(DbUnitModule.java:190)
+<br/>at org.unitils.dbunit.DbUnitModule$DbUnitListener.beforeTestSetUp(DbUnitModule.java:791)
+<br/>at org.unitils.core.Unitils$UnitilsTestListener.beforeTestSetUp(Unitils.java:273)
+<br/>at org.unitils.UnitilsTestNG.unitilsBeforeTestSetUp(UnitilsTestNG.java:62)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:498)
+<br/>at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+<br/>at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:398)
+<br/>at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+<br/>at org.testng.internal.Invoker.invokeMethod(Invoker.java:427)
+<br/>at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+<br/>at org.testng.TestRunner.runWorkers(TestRunner.java:712)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:582)
+<br/>at org.testng.TestRunner.run(TestRunner.java:477)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:324)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:319)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:292)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:198)
+<br/>at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:821)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:788)
+<br/>at org.testng.TestNG.run(TestNG.java:708)
+<br/>at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:72)
+<br/>at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:88)
+<br/>at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:498)
+<br/>at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+<br/>at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+<br/>at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+<br/>at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+<br/>1 lines not shown
+<p>Caused by Index: 0, Size: 0</p>
+java.util.ArrayList.rangeCheck(ArrayList.java:653)
+<br/>at java.util.ArrayList.get(ArrayList.java:429)
+<br/>at org.unitils.dbunit.DbUnitModule.getDefaultDbSupport(DbUnitModule.java:755)
+<br/>at org.unitils.dbunit.DbUnitModule.getDataSetFactory(DbUnitModule.java:725)
+<br/>at org.unitils.dbunit.DbUnitModule.getDataSetFactory(DbUnitModule.java:713)
+<br/>at org.unitils.dbunit.DbUnitModule.getDataSet(DbUnitModule.java:441)
+<br/>at org.unitils.dbunit.DbUnitModule.insertDataSet(DbUnitModule.java:261)
+<br/>at org.unitils.dbunit.DbUnitModule.insertDataSet(DbUnitModule.java:187)
+<br/>at org.unitils.dbunit.DbUnitModule$DbUnitListener.beforeTestSetUp(DbUnitModule.java:791)
+<br/>at org.unitils.core.Unitils$UnitilsTestListener.beforeTestSetUp(Unitils.java:273)
+<br/>at org.unitils.UnitilsTestNG.unitilsBeforeTestSetUp(UnitilsTestNG.java:62)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:498)
+<br/>at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+<br/>at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:398)
+<br/>at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+<br/>at org.testng.internal.Invoker.invokeMethod(Invoker.java:427)
+<br/>at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+<br/>at org.testng.TestRunner.runWorkers(TestRunner.java:712)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:582)
+<br/>at org.testng.TestRunner.run(TestRunner.java:477)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:324)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:319)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:292)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:198)
+<br/>at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:821)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:788)
+<br/>at org.testng.TestNG.run(TestNG.java:708)
+<br/>at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:72)
+<br/>at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:88)
+<br/>at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:498)
+<br/>at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+<br/>at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+<br/>at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+<br/>at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+<br/>1 lines not shown
+</td></tr>
+</table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m2"></a><h2>sample.unitils.AssertReflectionEqualsTest:testReflection</h2>
+<a id="m2"></a><h2>com.smart.dao.UserDaoTest:findUserByUserName</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

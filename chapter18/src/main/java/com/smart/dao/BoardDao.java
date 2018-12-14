@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import com.smart.domain.Board;
 
-@Repository
+@Repository("boardDao")
 public class BoardDao extends BaseDao<Board>{
 	private static final String GET_BOARD_NUM = "select count(f.boardId) from Board f";
 	

@@ -19,6 +19,7 @@
 <!--             <class name="sample.unitils.AssertReflectionEqualsTest"/>
 
  			<class name="sample.unitils.AssertLenientEqualsTest"/> -->
+         <class name="com.smart.dao.UserDaoTest"/>
          </classes>
 
     </test>

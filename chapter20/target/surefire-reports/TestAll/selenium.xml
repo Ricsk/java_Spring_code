@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="selenium" failures="0" tests="2" time="0.121" errors="0">
+<testsuite name="selenium" failures="0" tests="1" time="2.268" errors="0">
   <properties/>
-  <testcase name="testLenientEquals" time="0.066" classname="sample.unitils.AssertLenientEqualsTest"/>
-  <testcase name="testReflection" time="0.046" classname="sample.unitils.AssertReflectionEqualsTest"/>
+  <testcase name="@BeforeMethod unitilsBeforeTestSetUp" time="0.0" classname="com.smart.dao.UserDaoTest">
+    <failure type="org.unitils.core.UnitilsException" message="Error inserting test data from DbUnit dataset for method public void com.smart.dao.UserDaoTest.findUserByUserName()">
+      <![CDATA[org.unitils.core.UnitilsException: Error inserting test data from DbUnit dataset for method public void com.smart.dao.UserDaoTest.findUserByUserName()
+	at org.unitils.dbunit.DbUnitModule.insertDataSet(DbUnitModule.java:190)
+	at org.unitils.dbunit.DbUnitModule$DbUnitListener.beforeTestSetUp(DbUnitModule.java:791)
+	at org.unitils.core.Unitils$UnitilsTestListener.beforeTestSetUp(Unitils.java:273)
+	at org.unitils.UnitilsTestNG.unitilsBeforeTestSetUp(UnitilsTestNG.java:62)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:72)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at org.unitils.dbunit.DbUnitModule.getDefaultDbSupport(DbUnitModule.java:755)
+	at org.unitils.dbunit.DbUnitModule.getDataSetFactory(DbUnitModule.java:725)
+	at org.unitils.dbunit.DbUnitModule.getDataSetFactory(DbUnitModule.java:713)
+	at org.unitils.dbunit.DbUnitModule.getDataSet(DbUnitModule.java:441)
+	at org.unitils.dbunit.DbUnitModule.insertDataSet(DbUnitModule.java:261)
+	at org.unitils.dbunit.DbUnitModule.insertDataSet(DbUnitModule.java:187)
+	... 37 more
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="findUserByUserName" time="0.0" classname="com.smart.dao.UserDaoTest">
+    <skipped/>
+  </testcase>
 </testsuite>

@@ -2,9 +2,12 @@
 <suite thread-count="5" skipfailedinvocationCounts="false" verbose="0" name="Failed suite [TestAll]" junit="false" annotations="JDK">
   <test name="selenium(failed)" junit="false" annotations="JDK">
     <classes>
-      <class name="sample.unitils.AssertLenientEqualsTest">
+      <class name="com.smart.dao.UserDaoTest">
         <methods>
-          <include name="testLenientEquals"/>
+          <include name="findUserByUserName"/>
+          <include name="unitilsBeforeTestSetUp"/>
+          <include name="unitilsAfterTestTearDown"/>
+          <include name="unitilsBeforeClass"/>
         </methods>
       </class>
     </classes>
