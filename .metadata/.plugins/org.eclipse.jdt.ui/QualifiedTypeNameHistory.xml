@@ -1,24 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.unitils.dbunit.annotation.DataSet"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="java.lang.reflect.AccessibleObject"/>
-<fullyQualifiedTypeName name="java.lang.reflect.Modifier"/>
-<fullyQualifiedTypeName name="java.lang.reflect.Field"/>
-<fullyQualifiedTypeName name="org.apache.commons.beanutils.BeanUtilsBean"/>
-<fullyQualifiedTypeName name="java.util.Map"/>
-<fullyQualifiedTypeName name="org.apache.commons.beanutils.ConvertUtilsBean"/>
-<fullyQualifiedTypeName name="org.apache.commons.beanutils.converters.DateConverter"/>
-<fullyQualifiedTypeName name="java.security.Timestamp"/>
-<fullyQualifiedTypeName name="java.io.IOException"/>
-<fullyQualifiedTypeName name="org.dbunit.dataset.DataSetException"/>
-<fullyQualifiedTypeName name="org.dbunit.dataset.IDataSet"/>
-<fullyQualifiedTypeName name="org.dbunit.dataset.excel.XlsDataSet"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="org.dbunit.dataset.Column"/>
 <fullyQualifiedTypeName name="org.dbunit.dataset.ITable"/>
 <fullyQualifiedTypeName name="com.smart.test.dataset.util.XlsDataSetBeanFactory"/>
-<fullyQualifiedTypeName name="org.unitils.spring.annotation.SpringApplicationContext"/>
 <fullyQualifiedTypeName name="java.util.Comparator"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.function.IntConsumer"/>
@@ -30,7 +15,6 @@
 <fullyQualifiedTypeName name="org.springframework.test.context.testng.AbstractTestNGSpringContextTests"/>
 <fullyQualifiedTypeName name="org.springframework.test.context.ContextConfiguration"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
-<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
 <fullyQualifiedTypeName name="org.unitils.reflectionassert.ReflectionAssert"/>
 <fullyQualifiedTypeName name="org.unitils.reflectionassert.ReflectionComparatorMode"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
@@ -43,7 +27,6 @@
 <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
 <fullyQualifiedTypeName name="com.smart.domain.LoginLog"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="com.smart.domain.User"/>
 <fullyQualifiedTypeName name="org.springframework.orm.hibernate4.HibernateTemplate"/>
 <fullyQualifiedTypeName name="com.sun.glass.ui.Timer"/>
 <fullyQualifiedTypeName name="javax.management.timer.Timer"/>
@@ -60,4 +43,21 @@
 <fullyQualifiedTypeName name="java.lang.reflect.Proxy"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="org.testng.Assert"/>
+<fullyQualifiedTypeName name="com.smart.domain.User"/>
+<fullyQualifiedTypeName name="org.unitils.dbunit.annotation.DataSet"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+<fullyQualifiedTypeName name="org.unitils.spring.annotation.SpringBean"/>
+<fullyQualifiedTypeName name="org.unitils.spring.annotation.SpringApplicationContext"/>
+<fullyQualifiedTypeName name="org.unitils.UnitilsTestNG"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.util.logging.Logger"/>
+<fullyQualifiedTypeName name="java.util.logging.Level"/>
+<fullyQualifiedTypeName name="com.sun.media.jfxmedia.logging.Logger"/>
+<fullyQualifiedTypeName name="java.util.logging.Handler"/>
+<fullyQualifiedTypeName name="java.util.logging.ConsoleHandler"/>
+<fullyQualifiedTypeName name="java.time.LocalDate"/>
+<fullyQualifiedTypeName name="chapter5.Manager"/>
+<fullyQualifiedTypeName name="chapter6.interfaces.Employee"/>
+<fullyQualifiedTypeName name="chapter5.EmployeeBasic"/>
 </qualifiedTypeNameHistroy>
