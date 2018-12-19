@@ -56,7 +56,7 @@
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
 
-	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+<!-- 	<tx:advice id="txAdvice" transaction-manager="transactionManager">
 		<tx:attributes>
 			<tx:method name="*" propagation="REQUIRED" read-only="true"/>
 			<tx:method name="create*" propagation="REQUIRED" read-only="false" />
@@ -68,5 +68,5 @@
 	</tx:advice>
 	<aop:config>
 		<aop:advisor id="managerTx" advice-ref="txAdvice" pointcut="execution(* com.smart.*.*(..)))" order="1"/>
-	</aop:config> 
+	</aop:config>  -->
 </beans>

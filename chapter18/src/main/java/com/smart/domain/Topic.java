@@ -12,6 +12,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
@@ -38,7 +39,7 @@ public class Topic extends BaseDomain{
 	@Column(name = "last_post")
 	private Date lastPost;
 	
-	@Column(name = "topic_view")
+	@Column(name = "topic_views")
 	private int topicView;
 	
 	@Column(name = "topic_replies")
@@ -47,6 +48,9 @@ public class Topic extends BaseDomain{
 	@Column(name = "digest")
 	private int digest = NOT_DIGEST_TOPIC;
 	
+	@Transient
+	private MainPost mainPost = new MainPost();
+	
 	@ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE} )
 	@JoinColumn(name = "board_id")
 	private Board board;
@@ -54,6 +58,16 @@ public class Topic extends BaseDomain{
 	@ManyToOne
 	@JoinColumn(name = "user_id")
 	private User user;
+
+	
+	
+	public MainPost getMainPost() {
+		return mainPost;
+	}
+
+	public void setMainPost(MainPost mainPost) {
+		this.mainPost = mainPost;
+	}
 
 	public int getTopicId() {
 		return topicId;

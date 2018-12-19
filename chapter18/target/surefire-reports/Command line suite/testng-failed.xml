@@ -6,8 +6,10 @@
         <methods>
           <include name="unitilsBeforeTestSetUp"/>
           <include name="unitilsAfterTestTearDown"/>
+          <include name="removeBoard"/>
           <include name="getBoard"/>
           <include name="unitilsBeforeClass"/>
+          <include name="init"/>
         </methods>
       </class>
     </classes>

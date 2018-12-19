@@ -1,72 +1,34 @@
 <testng-results>
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite">
+  <suite name="TestAll">
     <groups>
     </groups>
-    <test name="Command line test">
-      <class name="com.smart.dao.BoardDaoTest">
-        <test-method status="PASS" signature="unitilsBeforeClass()" name="unitilsBeforeClass" is-config="true" duration-ms="195" started-at="2018-12-14T12:43:39Z" finished-at="2018-12-14T12:43:39Z">
+    <test name="selenium">
+      <class name="com.smart.service.ForumServiceTest">
+        <test-method status="PASS" signature="unitilsBeforeClass()" name="unitilsBeforeClass" is-config="true" duration-ms="208" started-at="2018-12-18T11:07:51Z" finished-at="2018-12-18T11:07:51Z">
         </test-method>
-        <test-method status="PASS" signature="unitilsBeforeTestSetUp(java.lang.reflect.Method)" name="unitilsBeforeTestSetUp" is-config="true" duration-ms="2509" started-at="2018-12-14T12:43:39Z" finished-at="2018-12-14T12:43:41Z">
+        <test-method status="PASS" signature="init()" name="init" is-config="true" duration-ms="1" started-at="2018-12-18T11:07:54Z" finished-at="2018-12-18T11:07:54Z">
+        </test-method>
+        <test-method status="PASS" signature="unitilsAfterTestTearDown(java.lang.reflect.Method)" name="unitilsAfterTestTearDown" is-config="true" duration-ms="8" started-at="2018-12-18T11:07:55Z" finished-at="2018-12-18T11:07:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.smart.dao.BoardDaoTest.addBoard() throws java.lang.Exception]]>
+                <![CDATA[public void com.smart.service.ForumServiceTest.addTopics() throws java.lang.Exception]]>
               </value>
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="removeBoard()" name="removeBoard" duration-ms="28" started-at="2018-12-14T12:43:42Z" finished-at="2018-12-14T12:43:42Z">
+        <test-method status="PASS" signature="addTopics()" name="addTopics" duration-ms="757" started-at="2018-12-18T11:07:54Z" finished-at="2018-12-18T11:07:55Z">
         </test-method>
-        <test-method status="PASS" signature="unitilsBeforeTestSetUp(java.lang.reflect.Method)" name="unitilsBeforeTestSetUp" is-config="true" duration-ms="348" started-at="2018-12-14T12:43:42Z" finished-at="2018-12-14T12:43:42Z">
+        <test-method status="PASS" signature="unitilsBeforeTestSetUp(java.lang.reflect.Method)" name="unitilsBeforeTestSetUp" is-config="true" duration-ms="2643" started-at="2018-12-18T11:07:51Z" finished-at="2018-12-18T11:07:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.smart.dao.BoardDaoTest.getBoard()]]>
+                <![CDATA[public void com.smart.service.ForumServiceTest.addTopics() throws java.lang.Exception]]>
               </value>
             </param>
           </params>
-        </test-method>
-        <test-method status="PASS" signature="unitilsAfterTestTearDown(java.lang.reflect.Method)" name="unitilsAfterTestTearDown" is-config="true" duration-ms="4" started-at="2018-12-14T12:43:42Z" finished-at="2018-12-14T12:43:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.smart.dao.BoardDaoTest.getBoard()]]>
-              </value>
-            </param>
-          </params>
-        </test-method>
-        <test-method status="PASS" signature="unitilsAfterTestTearDown(java.lang.reflect.Method)" name="unitilsAfterTestTearDown" is-config="true" duration-ms="2" started-at="2018-12-14T12:43:42Z" finished-at="2018-12-14T12:43:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.smart.dao.BoardDaoTest.removeBoard()]]>
-              </value>
-            </param>
-          </params>
-        </test-method>
-        <test-method status="PASS" signature="unitilsBeforeTestSetUp(java.lang.reflect.Method)" name="unitilsBeforeTestSetUp" is-config="true" duration-ms="348" started-at="2018-12-14T12:43:42Z" finished-at="2018-12-14T12:43:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.smart.dao.BoardDaoTest.removeBoard()]]>
-              </value>
-            </param>
-          </params>
-        </test-method>
-        <test-method status="PASS" signature="addBoard()" name="addBoard" duration-ms="343" started-at="2018-12-14T12:43:41Z" finished-at="2018-12-14T12:43:42Z">
-        </test-method>
-        <test-method status="PASS" signature="unitilsAfterTestTearDown(java.lang.reflect.Method)" name="unitilsAfterTestTearDown" is-config="true" duration-ms="7" started-at="2018-12-14T12:43:42Z" finished-at="2018-12-14T12:43:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.smart.dao.BoardDaoTest.addBoard() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-        </test-method>
-        <test-method status="PASS" signature="getBoard()" name="getBoard" duration-ms="7" started-at="2018-12-14T12:43:42Z" finished-at="2018-12-14T12:43:42Z">
         </test-method>
       </class>
     </test>
