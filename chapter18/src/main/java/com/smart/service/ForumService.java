@@ -1,11 +1,13 @@
 package com.smart.service;
 
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.smart.dao.BoardDao;
+import com.smart.dao.Page;
 import com.smart.dao.PostDao;
 import com.smart.dao.TopicDao;
 import com.smart.dao.UserDao;
@@ -80,4 +82,21 @@ public class ForumService{
 	public Board getBoardById(int boardId) {
 		return boardDao.get(boardId);
 	}
+	
+	public List<Board> getAllBoards(){
+		return boardDao.loadAll();
+	}
+	
+	public Page getPagedTopics(int boardId, int pageNo, int pageSize) {
+		return topicDao.getPagedTopics(boardId, pageNo, pageSize);
+	}
+
+	public Topic getTopicByTopicid(Integer topicId) {
+		return topicDao.get(topicId);
+	}
+
+	public Page getPagedPosts(Integer topicId, Integer pageNo, int pageSize) {
+		return postDao.getPagedPosts(topicId, pageNo, pageSize);
+	}
+	
 }
